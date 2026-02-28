@@ -1,3 +1,77 @@
+/* Base */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Responsive logo: scale with container, prevent overflow */
+header img[alt=""],
+footer img[alt=""] {
+  max-height: 2.5rem;
+  height: auto;
+  width: auto;
+}
+
+@media (min-width: 640px) {
+  header img[alt=""],
+  footer img[alt=""] {
+    max-height: 2.75rem;
+  }
+}
+
+/* Touch-friendly: minimum tap target 44px (already in HTML), ensure links/buttons don’t shrink */
+a.btn-tap,
+button.btn-tap {
+  touch-action: manipulation;
+}
+
+/* Form inputs: comfortable size on mobile */
+input,
+button[type="submit"] {
+  font-size: 16px; /* avoids iOS zoom on focus */
+}
+
+@media (min-width: 640px) {
+  input {
+    font-size: inherit;
+  }
+}
+
+/* Mobile menu: smooth open/close */
+.mobile-menu {
+  max-height: 80vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-menu:not(.hidden) {
+  animation: menuSlide 0.2s ease-out;
+}
+
+@keyframes menuSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus visible for keyboard users */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--tw-ring-color, #0b50da);
+  outline-offset: 2px;
+}
+
+/* Reduce motion when user prefers it */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .mobile-menu:not(.hidden) {
+    animation: none;
+  }
 }
