@@ -1,17 +1,22 @@
 <!doctype html>
 
-<html class="light" lang="en">
+<html class="light" lang="uz">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>ieltscore - Master Your Success</title>
+    <meta name="description" content="IELTSSCORE - Muvaffaqiyatingizni amalga oshiring">
+    <meta name="keywords" content="ieltscore, ielts, mock test, IELTS mock test, IELTS tayyorgarlik, IELTS onlayn test">
+    <meta name="author" content="IELTSSCORE">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="google-site-verification" content="google-site-verification=google-site-verification">
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+    <!-- image -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>IELTSSCORE - Muvaffaqiyatingizni amalga oshiring</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
       rel="stylesheet"
     />
     <link
@@ -45,7 +50,7 @@
    
   </head>
   <body
-    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100"
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col"
   >
     <!-- Navigation -->
     <header
@@ -54,7 +59,7 @@
       <div
         class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 sm:py-4"
       >
-        <a href="#" class="flex min-h-[44px] min-w-[44px] items-center gap-2 sm:min-w-0" aria-label="ieltscore home">
+        <a href="#" class="flex min-h-[44px] min-w-[44px] items-center gap-2 sm:min-w-0" aria-label="ieltscore bosh sahifa">
           <img
             src="logo.png"
             alt=""
@@ -64,190 +69,173 @@
           />
           <span class="text-lg font-bold tracking-tight text-primary sm:text-xl">ieltscore</span>
         </a>
-        <nav class="nav-menu hidden items-center gap-6 md:flex md:gap-8" aria-label="Main">
+        <nav class="nav-menu hidden items-center gap-6 md:flex md:gap-8" aria-label="Asosiy menyu">
           <a
             class="nav-link text-sm font-medium hover:text-primary transition-colors py-2 min-h-[44px] flex items-center"
             href="#features"
-            >Features</a
+            >Xususiyatlar</a
           >
           <a
             class="nav-link text-sm font-medium hover:text-primary transition-colors py-2 min-h-[44px] flex items-center"
             href="#how-it-works"
-            >How it Works</a
+            >Qanday ishlaydi</a
           >
           <a
             class="nav-link text-sm font-medium hover:text-primary transition-colors py-2 min-h-[44px] flex items-center"
             href="#reviews"
-            >Reviews</a
+            >Sharhlar</a
           >
         </nav>
-        <div class="flex items-center gap-2">
-          <a
-            class="btn-register hidden min-h-[44px] min-w-[44px] items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white transition-all hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 sm:inline-flex"
-            href="#lead-form"
-          >
-            Register Now
-          </a>
+         
           <button
             type="button"
             class="menu-toggle flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-slate-700 hover:bg-primary/10 hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary md:hidden"
-            aria-label="Open menu"
+            aria-label="Menyuni ochish"
             aria-expanded="false"
           >
             <span class="material-symbols-outlined text-2xl">menu</span>
           </button>
-        </div>
       </div>
       <!-- Mobile menu -->
       <div class="mobile-menu hidden border-t border-primary/10 bg-background-light dark:bg-background-dark md:hidden" aria-hidden="true">
-        <nav class="mx-auto max-w-7xl flex flex-col px-4 py-4 gap-1" aria-label="Mobile">
-          <a class="nav-link rounded-lg px-4 py-3 text-base font-medium hover:bg-primary/10 hover:text-primary min-h-[48px] flex items-center" href="#features">Features</a>
-          <a class="nav-link rounded-lg px-4 py-3 text-base font-medium hover:bg-primary/10 hover:text-primary min-h-[48px] flex items-center" href="#how-it-works">How it Works</a>
-          <a class="nav-link rounded-lg px-4 py-3 text-base font-medium hover:bg-primary/10 hover:text-primary min-h-[48px] flex items-center" href="#reviews">Reviews</a>
-          <a class="mt-2 flex min-h-[48px] items-center justify-center rounded-lg bg-primary px-4 py-3 text-base font-bold text-white hover:bg-primary/90" href="#lead-form">Register Now</a>
+        <nav class="mx-auto max-w-7xl flex flex-col px-4 py-4 gap-1" aria-label="Mobil menyu">
+          <a class="nav-link rounded-lg px-4 py-3 text-base font-medium hover:bg-primary/10 hover:text-primary min-h-[48px] flex items-center" href="#features">Xususiyatlar</a>
+          <a class="nav-link rounded-lg px-4 py-3 text-base font-medium hover:bg-primary/10 hover:text-primary min-h-[48px] flex items-center" href="#how-it-works">Qanday ishlaydi</a>
+          <a class="nav-link rounded-lg px-4 py-3 text-base font-medium hover:bg-primary/10 hover:text-primary min-h-[48px] flex items-center" href="#reviews">Sharhlar</a>
         </nav>
       </div>
     </header>
-    <main>
-      <!-- Hero Section -->
-      <section class="relative overflow-hidden px-4 py-12 sm:px-6 sm:py-16 lg:py-24">
-        <div class="mx-auto max-w-7xl">
-          <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
-            <div class="flex flex-col gap-6 sm:gap-8">
-              <div
-                class="inline-flex w-fit items-center gap-2 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary sm:px-4 sm:text-sm"
-              >
-                <span class="material-symbols-outlined text-sm">verified</span>
-                Authentic Testing Environment
-              </div>
-              <h1
-                class="text-3xl font-black leading-tight tracking-tight sm:text-4xl lg:text-6xl"
-              >
-                Master the IELTS with a
-                <span class="text-primary">Real-Feel</span> Mock Test
-              </h1>
-              <p
-                class="text-base leading-relaxed text-slate-600 dark:text-slate-400 sm:text-lg"
-              >
-                Experience a full Computer-Based Mock Test with 100%
-                human-checked results and speaking sessions led by 8.0+ Band
-                Mentors.
-              </p>
-              <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
-                <a
-                  class="btn-tap flex min-h-[48px] items-center justify-center rounded-xl bg-primary px-6 py-4 text-base font-bold text-white shadow-lg shadow-primary/20 transition-all hover:scale-[1.02] active:scale-[0.98] sm:px-8 sm:text-lg"
-                  href="#lead-form"
-                >
-                  Book Your Spot Today
-                </a>
-                <a
-                  class="btn-tap flex min-h-[48px] items-center justify-center rounded-xl border-2 border-primary/20 bg-transparent px-6 py-4 text-base font-bold text-primary transition-all hover:bg-primary/5 active:scale-[0.98] sm:px-8 sm:text-lg"
-                  href="#features"
-                >
-                  Explore Features
-                </a>
-              </div>
-            </div>
-            <div class="relative">
-              <div
-                class="aspect-video w-full overflow-hidden rounded-2xl shadow-2xl lg:aspect-square"
-              >
-                <img
-                  class="h-full w-full object-cover"
-                  data-alt="Student taking computer based test in a professional exam room"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOMEU77girhdfpUHYRkdn4bkJy_EKkXW0tnsoGRrFH5G85KRtr3pXDSoTz8tdU5GfeYXsk8GMDEu486-INLXkOhA_fSLg59F1AMrFawLWzboejhkkif3VlthMljBspt3p1d0oE2g9RMbQ36FBcYPIETfBtB6H2Yscx966qeIkAuxS5DgidMkpBOc9ySB6DIXi_RK2de5P1U8I1aLQy5UvBpQzH6MuTTBxGWea52iPTz85Sj9i5nd8gOWF-gewkg8bf7LjcDjv0GG5u"
-                />
-              </div>
-              <div
-                class="absolute -bottom-6 -left-6 rounded-xl bg-white p-6 shadow-xl dark:bg-slate-800"
-              >
-                <div class="flex items-center gap-4">
-                  <div class="flex -space-x-3">
-                    <img
-                      class="h-10 w-10 rounded-full border-2 border-white dark:border-slate-800"
-                      data-alt="Student profile photo small"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfInVNyEyHLbzy547Ep97Yn82wkIobPPgII3i3w9j2i5gK9uCzUkV2OEjnuUgWzFhpBZZw5y0vLfVFp8u7pnxc0fLfxiBAXPKr4Caa4Qmiyy672h-CN0iqytVZsdUhrUukquJAQPVddZ8GALfx3qOSaUt3OAjio7PEGKIohHlx1uQ1g9knS938v_FErWrXzU-mIauCtqYwj_52Zva2TLq5tanSJbDuLxcVJ4uASzgKv8D9z-1dh9A76csCsB22l2970lqrNGK-akYA"
-                    />
-                    <img
-                      class="h-10 w-10 rounded-full border-2 border-white dark:border-slate-800"
-                      data-alt="Student profile photo small"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHk93gtEYBUPsEC7XmyusVaTDeGdgye4ln-VDXR1RJ1Z7laf29pp7NgCTYIv6G6B6pguJM3HhuuAY0FtCWIR2nkRTR7Q2uVeDjX9q4HPOgQLVFCucwDsW_cErdzmMTioZ6_VXq3NIyJvnJJHyY6RjvwB3MvPy7sjbxEEYyNIJsRuLDZK0aMilDRjfEOVe53xSdVz2BV-7IvXay1guae2AhebhfsFaLayVpw9s_4ZBHRv8GXy0Vl0t5vWZQjalfmCK-IrLjsfk3EEVV"
-                    />
-                    <img
-                      class="h-10 w-10 rounded-full border-2 border-white dark:border-slate-800"
-                      data-alt="Student profile photo small"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsz5MK6HHctNxm4HKEFk-WB0Pm49Vh6FcsaIqtbLcEFsBXFu8qWwN30xVdQYpKn7R-f6V_Lf4SVFFZ9CiRV17hafEiMQTNy_v6MFjwd4vlOY8AK5fGLvJ-uziwSqE6xggwmUwCCSBtu2f9YxIfzAIb7MLf70JFUxtfM9ryLHChvrVIS6QptEBha3uXEJ4SinaOscN1MaOkOHeuxjiQ_J9e023rdpdG-wGrvv8P7I2Ytm4RiJPuqYoWA5AD6jd8NYKziVhkdP-pONvx"
-                    />
+    <main class="flex-1">
+      <!-- Form Section -->
+      <section class="bg-slate-900 py-16 text-white sm:py-20 lg:py-24" id="lead-form">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
+          <div class="rounded-2xl bg-primary p-6 sm:rounded-3xl sm:p-8 lg:p-16">
+            <div class="grid gap-10 lg:grid-cols-2 lg:gap-16">
+              <div class="flex flex-col justify-center gap-6">
+                <h2 class="text-3xl font-black tracking-tight ">
+                  Bugundan boshlanib, o‘zingizni o‘zgartiring
+                </h2>
+                <p class="text-base opacity-90 sm:text-lg">
+                  Mock Test uchun o‘rinlar cheklangan — sifatli yuzma-yuz fikr-mulohaza uchun. O‘zingizga qulay vaqt va sanani belgilash uchun , hozir ro‘yxatdan o‘ting.
+                </p>
+                <div class="flex flex-col gap-3 sm:gap-4">
+                  <div class="flex items-center gap-3 sm:gap-4">
+                    <span class="material-symbols-outlined shrink-0 text-green-500">check_circle</span>
+                    <span>To‘liq Speaking suhbati kiritilgan</span>
                   </div>
-                  <div>
-                    <p class="text-sm font-bold">100+ Students</p>
-                    <p class="text-xs text-slate-500">
-                      Already improved their scores
-                    </p>
+                  <div class="flex items-center gap-3 sm:gap-4">
+                    <span class="material-symbols-outlined shrink-0 text-green-500">check_circle</span>
+                    <span>Barcha bo'limlar to'liq simulyatsiya qilingan</span>
+                  </div>
+                  <div class="flex items-center gap-3 sm:gap-4">
+                    <span class="material-symbols-outlined shrink-0 text-green-500">check_circle</span>
+                    <span>Batafsil Mock Test bo‘yicha natijangizni oling</span>
                   </div>
                 </div>
+              </div>
+              <div
+                class="rounded-xl bg-white p-5 text-slate-900 shadow-2xl dark:bg-slate-800 dark:text-white sm:rounded-2xl sm:p-8"
+              >
+                <form action="#" class="flex flex-col gap-5 sm:gap-6">
+                  <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold" for="name">To‘liq ism</label>
+                    <input
+                      id="name"
+                      name="name"
+                      class="rounded-lg border border-slate-200 bg-slate-50 p-3.5 text-base focus:border-primary focus:ring-2 focus:ring-primary/20 dark:border-slate-700 dark:bg-slate-900 sm:p-4"
+                      placeholder="Ism Familiya"
+                      type="text"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold" for="phone">Telefon raqami</label>
+                    <input
+                      id="phone"
+                      name="phone"
+                      class="rounded-lg border border-slate-200 bg-slate-50 p-3.5 text-base focus:border-primary focus:ring-2 focus:ring-primary/20 dark:border-slate-700 dark:bg-slate-900 sm:p-4"
+                      placeholder="+998 90 123 45 67"
+                      type="tel"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label class="text-sm font-bold" for="city">Shahar</label>
+                    <input
+                      id="city"
+                      name="city"
+                      class="rounded-lg border border-slate-200 bg-slate-50 p-3.5 text-base focus:border-primary focus:ring-2 focus:ring-primary/20 dark:border-slate-700 dark:bg-slate-900 sm:p-4"
+                      placeholder="Shahringiz"
+                      type="text"
+                    />
+                  </div>
+                  <button
+                    class="btn-tap mt-2 min-h-[48px] rounded-xl bg-primary py-3.5 font-black text-white transition-all hover:bg-primary/90 active:scale-[0.98] sm:mt-4 sm:py-4"
+                    type="submit"
+                  >
+                    Ro‘yxatdan o‘tish
+                  </button>
+                  <p class="text-center text-xs text-slate-500">
+                    Ro‘yxatdan o‘tish orqali siz Foydalanish shartlari va Maxfiylik siyosatiga rozisiz.
+                  </p>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
+     
       <!-- Features Grid -->
       <section class="bg-primary/5 py-16 sm:py-20 lg:py-24" id="features">
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
-          <div class="mb-12 text-center sm:mb-16">
+          <div class="mb-10 text-center sm:mb-16">
             <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl">
-              Why Choose Our Mock Test?
+              Nima uchun bizning mock testimiz?
             </h2>
-            <p class="mt-3 text-slate-600 dark:text-slate-400 sm:mt-4">
-              We provide the most authentic testing experience with professional
-              human oversight.
+            <p class="mt-3 max-w-2xl mx-auto text-slate-600 dark:text-slate-400 sm:mt-4 text-sm sm:text-base">
+              Ekspertlar nazorati ostida eng haqiqiy test tajribasini taqdim etamiz.
             </p>
           </div>
-          <div class="grid gap-6 sm:gap-8 md:grid-cols-3">
+          <div class="grid gap-5 sm:gap-8 md:grid-cols-3">
             <div
-              class="rounded-2xl border border-primary/10 bg-background-light p-8 shadow-sm transition-all hover:shadow-md dark:bg-background-dark"
+              class="rounded-2xl border border-primary/10 bg-background-light p-6 shadow-sm transition-all hover:shadow-md dark:bg-background-dark sm:p-8"
             >
               <div
-                class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary text-white"
+                class="mb-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary text-white sm:mb-6 sm:h-14 sm:w-14"
               >
-                <span class="material-symbols-outlined text-3xl"
+                <span class="material-symbols-outlined text-2xl sm:text-3xl"
                   >person_check</span
                 >
               </div>
-              <h3 class="mb-3 text-xl font-bold">Human-Checked</h3>
-              <p class="text-slate-600 dark:text-slate-400">
-                No AI shortcuts. Detailed feedback from experts on every section
-                to ensure accuracy and real insight.
+              <h3 class="mb-2 text-lg font-bold sm:mb-3 sm:text-xl">Ekspertlar tekshiradi</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 sm:text-base">
+                AI qisqa yo‘llari yo‘q. Har bir bo‘lim bo‘yicha batafsil fikr — aniqlik va haqiqiy tushuncha uchun.
               </p>
             </div>
             <div
-              class="rounded-2xl border border-primary/10 bg-background-light p-8 shadow-sm transition-all hover:shadow-md dark:bg-background-dark"
+              class="rounded-2xl border border-primary/10 bg-background-light p-6 shadow-sm transition-all hover:shadow-md dark:bg-background-dark sm:p-8"
             >
               <div
-                class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary text-white"
+                class="mb-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary text-white sm:mb-6 sm:h-14 sm:w-14"
               >
-                <span class="material-symbols-outlined text-3xl">timer</span>
+                <span class="material-symbols-outlined text-2xl sm:text-3xl">timer</span>
               </div>
-              <h3 class="mb-3 text-xl font-bold">48-Hour Turnaround</h3>
-              <p class="text-slate-600 dark:text-slate-400">
-                Get your results and comprehensive report within 2 days of
-                testing. Fast feedback for faster improvement.
+              <h3 class="mb-2 text-lg font-bold sm:mb-3 sm:text-xl">48 soat ichida natija</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 sm:text-base">
+                Testdan keyin 2 kun ichida natija va batafsil hisobot. Tez fikr — tezroq rivojlanish.
               </p>
             </div>
             <div
-              class="rounded-2xl border border-primary/10 bg-background-light p-8 shadow-sm transition-all hover:shadow-md dark:bg-background-dark"
+              class="rounded-2xl border border-primary/10 bg-background-light p-6 shadow-sm transition-all hover:shadow-md dark:bg-background-dark sm:p-8"
             >
               <div
-                class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-primary text-white"
+                class="mb-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary text-white sm:mb-6 sm:h-14 sm:w-14"
               >
-                <span class="material-symbols-outlined text-3xl"
+                <span class="material-symbols-outlined text-2xl sm:text-3xl"
                   >workspace_premium</span
                 >
               </div>
-              <h3 class="mb-3 text-xl font-bold">8.0+ Band Mentors</h3>
-              <p class="text-slate-600 dark:text-slate-400">
-                Personal speaking assessment with high-scoring professionals who
-                have conquered the test themselves.
+              <h3 class="mb-2 text-lg font-bold sm:mb-3 sm:text-xl">8.0+ ball mentorlar</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 sm:text-base">
+                Yuqori ball olgan mutaxassislar bilan shaxsiy speaking baholash — ular o‘zlari ham testdan o‘tgan.
               </p>
             </div>
           </div>
@@ -259,158 +247,154 @@
           <div class="grid items-center gap-16 lg:grid-cols-2">
             <div class="order-2 lg:order-1">
               <div class="relative flex flex-col gap-10">
-                <div class="flex gap-6">
+                <div class="flex gap-4 sm:gap-6">
                   <div class="relative flex flex-col items-center">
                     <div
-                      class="flex h-12 w-12 items-center justify-center rounded-full bg-primary font-bold text-white"
+                      class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white sm:h-12 sm:w-12"
                     >
                       1
                     </div>
                     <div class="h-full w-0.5 bg-primary/20"></div>
                   </div>
-                  <div class="pb-10">
-                    <h4 class="text-xl font-bold">Register Online</h4>
-                    <p class="mt-2 text-slate-600 dark:text-slate-400">
-                      Choose your preferred date and book your spot using our
-                      simple online form.
+                  <div class="pb-8 sm:pb-10">
+                    <h4 class="text-lg font-bold sm:text-xl">Onlayn ro‘yxatdan o‘ting</h4>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 sm:text-base">
+                      O‘zingizga qulay sanani tanlang va oddiy onlayn forma orqali o‘rinni band qiling.
                     </p>
                   </div>
                 </div>
-                <div class="flex gap-6">
+                <div class="flex gap-4 sm:gap-6">
                   <div class="relative flex flex-col items-center">
                     <div
-                      class="flex h-12 w-12 items-center justify-center rounded-full bg-primary font-bold text-white"
+                      class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white sm:h-12 sm:w-12"
                     >
                       2
                     </div>
                     <div class="h-full w-0.5 bg-primary/20"></div>
                   </div>
-                  <div class="pb-10">
-                    <h4 class="text-xl font-bold">Take the Full Test</h4>
-                    <p class="mt-2 text-slate-600 dark:text-slate-400">
-                      Complete Listening, Reading, and Writing in a simulated
-                      exam environment.
+                  <div class="pb-8 sm:pb-10">
+                    <h4 class="text-lg font-bold sm:text-xl">To‘liq testni topshiring</h4>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 sm:text-base">
+                      Listening, Reading va Writing bo‘limlarini simulyatsiya qilingan imtixon muhitida bajaring.
                     </p>
                   </div>
                 </div>
-                <div class="flex gap-6">
+                <div class="flex gap-4 sm:gap-6">
                   <div class="relative flex flex-col items-center">
                     <div
-                      class="flex h-12 w-12 items-center justify-center rounded-full bg-primary font-bold text-white"
+                      class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white sm:h-12 sm:w-12"
                     >
                       3
                     </div>
                     <div class="h-full w-0.5 bg-primary/20"></div>
                   </div>
-                  <div class="pb-10">
-                    <h4 class="text-xl font-bold">Speaking Interview</h4>
-                    <p class="mt-2 text-slate-600 dark:text-slate-400">
-                      Join a live 1-on-1 session with a senior mentor for your
-                      speaking evaluation.
+                  <div class="pb-8 sm:pb-10">
+                    <h4 class="text-lg font-bold sm:text-xl">Speaking suhbati</h4>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 sm:text-base">
+                      Katta mentor bilan jonli tarzda yuzma-yuz sessiyada qatnashing — speaking darajangizni bilib oling.
                     </p>
                   </div>
                 </div>
-                <div class="flex gap-6">
+                <div class="flex gap-4 sm:gap-6">
                   <div
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-primary font-bold text-white"
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white sm:h-12 sm:w-12"
                   >
                     4
                   </div>
                   <div>
-                    <h4 class="text-xl font-bold">Detailed Report</h4>
-                    <p class="mt-2 text-slate-600 dark:text-slate-400">
-                      Receive human-checked feedback and your estimated band
-                      score within 48 hours.
+                    <h4 class="text-lg font-bold sm:text-xl">Batafsil hisobot</h4>
+                    <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 sm:text-base">
+                      48 soat ichida ekspertlar sizga natijangizni taqdim etadilar.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="order-1 flex flex-col gap-6 lg:order-2">
-              <h2 class="text-4xl font-black">
-                Success is a Process, <br />
-                Not an Accident
+            <div class="order-1 flex flex-col gap-4 sm:gap-6 lg:order-2">
+              <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl">
+                Muvaffaqiyat — jarayon, <br />
+                tasodif emas
               </h2>
-              <p class="text-lg text-slate-600 dark:text-slate-400">
-                Our structured approach ensures you are not just taking a test,
-                but learning from your mistakes with professional guidance at
-                every step.
+              <p class="text-base text-slate-600 dark:text-slate-400 sm:text-lg">
+                Bizning tuzilgan yondashuvimiz nafaqat test topshirishni, balki har qadamda mutaxassis yo‘riqnomasi bilan xatolardan saboq olishingizni ta’minlaydi.
               </p>
               <img
-                class="rounded-2xl shadow-lg"
-                data-alt="Education mentor explaining test concepts to a student"
+                class="w-full max-w-full rounded-2xl shadow-lg object-cover"
+                alt="Mentor talabaga test tushunchalarini tushuntirayapti"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7FqSS-ZClMeZvh1BTaMThk1aRpQpOjmdTMEMERilc4QL-8U9WN5BX4__IGABAoKCrWRwr-fB9mh8CsLA2S7LSlSnAD4qOtMeztpQIg-uk_z46MYB4JYPRGGAlSzkoyXDkhHmtm3FHdy7i3JlTRJ6WSxxw7lSvkhHJkW9gBD6k-4FewfAxpxd0DSR0uObEObnaw6GsdbmQW6ZJXir9creh8wVVu1i-UEp4SlR4DLSkO2ldIsCJft3vXtKUnniC5oFmL-YiEr70r7mg"
               />
             </div>
           </div>
         </div>
       </section>
-      <!-- Form Section -->
       <section class="bg-slate-900 py-16 text-white sm:py-20 lg:py-24" id="lead-form">
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
           <div class="rounded-2xl bg-primary p-6 sm:rounded-3xl sm:p-8 lg:p-16">
             <div class="grid gap-10 lg:grid-cols-2 lg:gap-16">
               <div class="flex flex-col justify-center gap-6">
-                <h2 class="text-4xl font-black tracking-tight lg:text-5xl">
-                  Book Your Spot Today
+                <h2 class="text-3xl font-black tracking-tight ">
+                  Bugundan boshlanib, o‘zingizni o‘zgartiring
                 </h2>
-                <p class="text-lg opacity-90">
-                  Spots are limited for each session to ensure quality 1-on-1
-                  feedback. Register now to lock in your preferred time and
-                  date.
+                <p class="text-base opacity-90 sm:text-lg">
+                  Mock Test uchun o‘rinlar cheklangan — sifatli holatda yuzma-yuz fikr-mulohaza qilib oling. O‘zingizga qulay vaqt va sanani belgilash uchun , hozir ro‘yxatdan o‘ting.
                 </p>
-                <div class="flex flex-col gap-4">
-                  <div class="flex items-center gap-4">
-                    <span class="material-symbols-outlined">check_circle</span>
-                    <span>Full Speaking Session included</span>
+                <div class="flex flex-col gap-3 sm:gap-4">
+                  <div class="flex items-center gap-3 sm:gap-4">
+                    <span class="material-symbols-outlined shrink-0 text-green-500">check_circle</span>
+                    <span>To‘liq Speaking suhbati kiritilgan</span>
                   </div>
-                  <div class="flex items-center gap-4">
-                    <span class="material-symbols-outlined">check_circle</span>
-                    <span>Detailed Writing Feedback</span>
+                  <div class="flex items-center gap-3 sm:gap-4">
+                    <span class="material-symbols-outlined shrink-0 text-green-500">check_circle</span>
+                    <span>Barcha bo'limlar to'liq simulyatsiya qilingan</span>
                   </div>
-                  <div class="flex items-center gap-4">
-                    <span class="material-symbols-outlined">check_circle</span>
-                    <span>Band Score Projection</span>
+                  <div class="flex items-center gap-3 sm:gap-4">
+                    <span class="material-symbols-outlined shrink-0 text-green-500">check_circle</span>
+                    <span>Batafsil Mock Test bo‘yicha natijangizni oling</span>
                   </div>
                 </div>
               </div>
               <div
-                class="rounded-xl bg-white p-6 text-slate-900 shadow-2xl dark:bg-slate-800 dark:text-white sm:rounded-2xl sm:p-8"
+                class="rounded-xl bg-white p-5 text-slate-900 shadow-2xl dark:bg-slate-800 dark:text-white sm:rounded-2xl sm:p-8"
               >
-                <form action="#" class="flex flex-col gap-6">
+                <form action="#" class="flex flex-col gap-5 sm:gap-6">
                   <div class="flex flex-col gap-2">
-                    <label class="text-sm font-bold">Full Name</label>
+                    <label class="text-sm font-bold" for="name">To‘liq ism</label>
                     <input
-                      class="rounded-lg border-slate-200 bg-slate-50 p-4 focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-900"
-                      placeholder="John Doe"
+                      id="name"
+                      name="name"
+                      class="rounded-lg border border-slate-200 bg-slate-50 p-3.5 text-base focus:border-primary focus:ring-2 focus:ring-primary/20 dark:border-slate-700 dark:bg-slate-900 sm:p-4"
+                      placeholder="Ism Familiya"
                       type="text"
                     />
                   </div>
                   <div class="flex flex-col gap-2">
-                    <label class="text-sm font-bold">Phone Number</label>
+                    <label class="text-sm font-bold" for="phone">Telefon raqami</label>
                     <input
-                      class="rounded-lg border-slate-200 bg-slate-50 p-4 focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-900"
-                      placeholder="+1 (555) 000-0000"
+                      id="phone"
+                      name="phone"
+                      class="rounded-lg border border-slate-200 bg-slate-50 p-3.5 text-base focus:border-primary focus:ring-2 focus:ring-primary/20 dark:border-slate-700 dark:bg-slate-900 sm:p-4"
+                      placeholder="+998 90 123 45 67"
                       type="tel"
                     />
                   </div>
                   <div class="flex flex-col gap-2">
-                    <label class="text-sm font-bold">City</label>
+                    <label class="text-sm font-bold" for="city">Shahar</label>
                     <input
-                      class="rounded-lg border-slate-200 bg-slate-50 p-4 focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-900"
-                      placeholder="Your City"
+                      id="city"
+                      name="city"
+                      class="rounded-lg border border-slate-200 bg-slate-50 p-3.5 text-base focus:border-primary focus:ring-2 focus:ring-primary/20 dark:border-slate-700 dark:bg-slate-900 sm:p-4"
+                      placeholder="Shahringiz"
                       type="text"
                     />
                   </div>
                   <button
-                    class="btn-tap mt-4 min-h-[48px] rounded-xl bg-primary py-4 font-black text-white transition-all hover:bg-primary/90 active:scale-[0.98]"
+                    class="btn-tap mt-2 min-h-[48px] rounded-xl bg-primary py-3.5 font-black text-white transition-all hover:bg-primary/90 active:scale-[0.98] sm:mt-4 sm:py-4"
                     type="submit"
                   >
-                    Register Now
+                    Ro‘yxatdan o‘tish
                   </button>
                   <p class="text-center text-xs text-slate-500">
-                    By registering, you agree to our Terms of Service and
-                    Privacy Policy.
+                    Ro‘yxatdan o‘tish orqali siz Foydalanish shartlari va Maxfiylik siyosatiga rozisiz.
                   </p>
                 </form>
               </div>
@@ -421,82 +405,79 @@
       <!-- Social Proof / Reviews -->
       <section class="py-16 sm:py-20 lg:py-24" id="reviews">
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
-          <div class="mb-12 text-center sm:mb-16">
-            <h2 class="text-2xl font-black sm:text-3xl">Trusted by Global Students</h2>
-            <p class="mt-4 text-slate-600 dark:text-slate-400">
-              Join the thousands who achieved their dream band score.
+          <div class="mb-10 text-center sm:mb-16">
+            <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl">IELTS o‘rganuvchilar bizga ishonadilar</h2>
+            <p class="mt-3 max-w-xl mx-auto text-slate-600 dark:text-slate-400 sm:mt-4 text-sm sm:text-base">
+              Orzu qilgan ballga erishgan yuzlab talabalar qatoriga qo‘shiling.
             </p>
           </div>
-          <div class="grid gap-8 md:grid-cols-3">
-            <div class="rounded-2xl bg-slate-50 p-8 dark:bg-slate-900">
-              <div class="flex gap-1 text-yellow-400">
-                <span class="material-symbols-outlined fill-current">star</span>
-                <span class="material-symbols-outlined fill-current">star</span>
-                <span class="material-symbols-outlined fill-current">star</span>
-                <span class="material-symbols-outlined fill-current">star</span>
-                <span class="material-symbols-outlined fill-current">star</span>
+          <div class="grid gap-6 sm:gap-8 md:grid-cols-3">
+            <div class="rounded-2xl bg-slate-50 p-6 dark:bg-slate-900 sm:p-8">
+              <div class="flex gap-0.5 text-yellow-400" aria-hidden="true">
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
               </div>
-              <p class="mt-4 italic text-slate-600 dark:text-slate-400">
-                "The feedback on my writing section was a game changer. I
-                finally understood why I was stuck at 6.5!"
+              <p class="mt-4 text-sm italic text-slate-600 dark:text-slate-400 sm:text-base">
+                «Writing bo‘limi bo‘yicha fikr hammasi o‘zgartirdi. Nima uchun 6.5 da qotib qolganimni nihoyat tushundim!»
               </p>
-              <div class="mt-6 flex items-center gap-4">
+              <div class="mt-5 flex items-center gap-3 sm:mt-6 sm:gap-4">
                 <img
-                  class="h-10 w-10 rounded-full"
-                  data-alt="Reviewer portrait"
+                  class="h-10 w-10 shrink-0 rounded-full object-cover"
+                  alt="Foydalanuvchi"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgyBjNMAcPgy32lpT6event7VtZ2Xpb_V6pZNfMOjA0qC4l4yJcH8dX7cemoTDhnpETTfRROW5j68gFTlgRrvB7Alljaum3mtS7jCY63neCdiVKynVSZVaPLwbf-irFMnPHSJLLyCqqXY4vp_ATY4jZX0bcgeaPrZ6OCO4gQsErada4FHf1_vD7sooGhsu6Tw74OU-IXJjU-GqgAKwlw02UqImqDNzRTw-2YUsEjEnriQyqElj1FJb7dgN_F_AYwaOAJLUYDFpfTWI"
                 />
-                <div>
-                  <p class="text-sm font-bold">Ahmed K.</p>
-                  <p class="text-xs text-slate-500">Achieved Band 7.5</p>
+                <div class="min-w-0">
+                  <p class="text-sm font-bold">Ahmad K.</p>
+                  <p class="text-xs text-slate-500">7.5 ball</p>
                 </div>
               </div>
             </div>
-            <div class="rounded-2xl bg-slate-50 p-8 dark:bg-slate-900">
-              <div class="flex gap-1 text-yellow-400">
-                <span class="material-symbols-outlined fill-current">star</span>
-                <span class="material-symbols-outlined fill-current">star</span>
-                <span class="material-symbols-outlined fill-current">star</span>
-                <span class="material-symbols-outlined fill-current">star</span>
-                <span class="material-symbols-outlined fill-current">star</span>
+            <div class="rounded-2xl bg-slate-50 p-6 dark:bg-slate-900 sm:p-8">
+              <div class="flex gap-0.5 text-yellow-400" aria-hidden="true">
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
               </div>
-              <p class="mt-4 italic text-slate-600 dark:text-slate-400">
-                "The mock test felt exactly like the real thing. The mentors are
-                incredibly supportive and professional."
+              <p class="mt-4 text-sm italic text-slate-600 dark:text-slate-400 sm:text-base">
+                «Mock test haqiqiy imtihonga o‘xshash edi. Mentorlar juda qo‘llab-quvvatlovchi va professional.»
               </p>
-              <div class="mt-6 flex items-center gap-4">
+              <div class="mt-5 flex items-center gap-3 sm:mt-6 sm:gap-4">
                 <img
-                  class="h-10 w-10 rounded-full"
-                  data-alt="Reviewer portrait"
+                  class="h-10 w-10 shrink-0 rounded-full object-cover"
+                  alt="Foydalanuvchi"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv_a83IgCMhgpsh9WNX_zyjmrCvGCaEUwtvrwBEj8pl0_R3i3pykzUy0HwYOsE5GOGQhoXi1Fd1CD8WieHGJKV8toocFyuMKW8sZC95kE0GVw3X34YSk_wjkMmH_-QwXW99Sb4RahmT1Y_bx7SLrNV_v6liTsxkQXEHtB__lAMEOP-OSFAkX11_aET92uuTO0K9sNdmpU4A93CoULBduEYUhLrhzokaPgwC389doryDSKKZMCdK0ijQfFJRg_JGo9PgFHYDVuZIO8W"
                 />
-                <div>
-                  <p class="text-sm font-bold">Sarah M.</p>
-                  <p class="text-xs text-slate-500">Achieved Band 8.0</p>
+                <div class="min-w-0">
+                  <p class="text-sm font-bold">Sarvar M.</p>
+                  <p class="text-xs text-slate-500">8.0 ball</p>
                 </div>
               </div>
             </div>
-            <div class="rounded-2xl bg-slate-50 p-8 dark:bg-slate-900">
-              <div class="flex gap-1 text-yellow-400">
-                <span class="material-symbols-outlined fill-current">star</span>
-                <span class="material-symbols-outlined fill-current">star</span>
-                <span class="material-symbols-outlined fill-current">star</span>
-                <span class="material-symbols-outlined fill-current">star</span>
-                <span class="material-symbols-outlined fill-current">star</span>
+            <div class="rounded-2xl bg-slate-50 p-6 dark:bg-slate-900 sm:p-8">
+              <div class="flex gap-0.5 text-yellow-400" aria-hidden="true">
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
+                <span class="material-symbols-outlined fill-current text-lg sm:text-base">star</span>
               </div>
-              <p class="mt-4 italic text-slate-600 dark:text-slate-400">
-                "Highly recommended for anyone serious about their IELTS.
-                48-hour results helped me prepare quickly."
+              <p class="mt-4 text-sm italic text-slate-600 dark:text-slate-400 sm:text-base">
+                «IELTS ni jiddiy o‘rganayotganlar uchun juda tavsiya etaman. 48 soat ichida natija tez tayyorgarlik ko‘rishga yordam berdi.»
               </p>
-              <div class="mt-6 flex items-center gap-4">
+              <div class="mt-5 flex items-center gap-3 sm:mt-6 sm:gap-4">
                 <img
-                  class="h-10 w-10 rounded-full"
-                  data-alt="Reviewer portrait"
+                  class="h-10 w-10 shrink-0 rounded-full object-cover"
+                  alt="Foydalanuvchi"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXyGn02WoGGdr5Sg_C2Zgq1dpxRKlNrcOx9Lwff8-YXgxml9XiLMlLYxVOhwQz8tQwUwFg2lrNt2jydW81svtl_zB9t57ZZJ-Kc67frOxO3OkQRs2vHL1ZX_XwsPGujLSv1EqOFuDXDCEc63_GUXnbitwfiIdrK473xZXdonPzlNClVqcxJYm67Wa9-dl2h7n5VHChMck5ZeW7oVrrU-GoboUfYZ6aUSu3x-G8fL-rtAy4XgCR8p483JGTzlVMlMcIpB0m5k5EML0x"
                 />
-                <div>
-                  <p class="text-sm font-bold">Lin Z.</p>
-                  <p class="text-xs text-slate-500">Achieved Band 7.0</p>
+                <div class="min-w-0">
+                  <p class="text-sm font-bold">Lola Z.</p>
+                  <p class="text-xs text-slate-500">7.0 ball</p>
                 </div>
               </div>
             </div>
@@ -512,15 +493,15 @@
         <div
           class="flex flex-col items-center justify-between gap-6 md:flex-row md:gap-8"
         >
-          <a href="#" class="flex items-center gap-2" aria-label="ieltscore home">
+          <a href="#" class="flex items-center gap-2" aria-label="ieltscore bosh sahifa">
             <img src="logo.png" alt="" class="h-8 w-8 rounded-lg object-contain" width="32" height="32" />
             <span class="text-lg font-bold tracking-tight text-primary">ieltscore</span>
           </a>
-          <div class="flex gap-8 text-sm text-slate-600 dark:text-slate-400">
-            <a class="hover:text-primary" href="#">About Us</a>
-            <a class="hover:text-primary" href="#">Contact</a>
-            <a class="hover:text-primary" href="#">Terms</a>
-            <a class="hover:text-primary" href="#">Privacy</a>
+          <div class="flex flex-wrap justify-center gap-6 sm:gap-8 text-sm text-slate-600 dark:text-slate-400">
+            <a class="hover:text-primary transition-colors" href="#">Biz haqimizda</a>
+            <a class="hover:text-primary transition-colors" href="#">Aloqa</a>
+            <a class="hover:text-primary transition-colors" href="#">Shartlar</a>
+            <a class="hover:text-primary transition-colors" href="#">Maxfiylik</a>
           </div>
           <div class="flex gap-4">
             <a
@@ -537,9 +518,8 @@
             </a>
           </div>
         </div>
-        <div class="mt-12 text-center text-xs text-slate-500">
-          © 2024 ieltscore. All rights reserved. Professional Mock Testing
-          Solutions.
+        <div class="mt-10 sm:mt-12 text-center text-xs text-slate-500 px-2">
+          © 2024 ieltscore. Barcha huquqlar himoyalangan. Professional mock test xizmatlari.
         </div>
       </div>
     </footer>
@@ -552,7 +532,7 @@
         toggle.addEventListener('click', function () {
           var open = menu.classList.toggle('hidden');
           toggle.setAttribute('aria-expanded', !open);
-          toggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+          toggle.setAttribute('aria-label', open ? 'Menyuni ochish' : 'Menyuni yopish');
           toggle.querySelector('.material-symbols-outlined').textContent = open ? 'menu' : 'close';
           body.style.overflow = open ? '' : 'hidden';
         });
@@ -560,7 +540,7 @@
           link.addEventListener('click', function () {
             menu.classList.add('hidden');
             toggle.setAttribute('aria-expanded', 'false');
-            toggle.setAttribute('aria-label', 'Open menu');
+            toggle.setAttribute('aria-label', 'Menyuni ochish');
             toggle.querySelector('.material-symbols-outlined').textContent = 'menu';
             body.style.overflow = '';
           });

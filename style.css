@@ -2,6 +2,19 @@
 html {
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Safe area for notched devices (e.g. iPhone X+) */
+body {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Prevent horizontal overflow on small screens */
+html, body {
+  overflow-x: hidden;
 }
 
 /* Responsive logo: scale with container, prevent overflow */
@@ -19,39 +32,52 @@ footer img[alt=""] {
   }
 }
 
-/* Touch-friendly: minimum tap target 44px (already in HTML), ensure links/buttons don’t shrink */
+/* Touch-friendly: minimum tap target 44px, ensure links/buttons don't shrink */
 a.btn-tap,
 button.btn-tap {
   touch-action: manipulation;
 }
 
-/* Form inputs: comfortable size on mobile */
+/* Form inputs: comfortable size on mobile, avoid iOS zoom on focus */
 input,
+select,
+textarea,
 button[type="submit"] {
-  font-size: 16px; /* avoids iOS zoom on focus */
+  font-size: 16px;
+  max-width: 100%;
 }
 
 @media (min-width: 640px) {
-  input {
+  input,
+  select,
+  textarea {
     font-size: inherit;
   }
 }
 
-/* Mobile menu: smooth open/close */
+/* Input focus ring visibility */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Mobile menu: smooth open/close, safe max-height */
 .mobile-menu {
-  max-height: 80vh;
+  max-height: min(80vh, 400px);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 
 .mobile-menu:not(.hidden) {
-  animation: menuSlide 0.2s ease-out;
+  animation: menuSlide 0.25s ease-out;
 }
 
 @keyframes menuSlide {
   from {
     opacity: 0;
-    transform: translateY(-4px);
+    transform: translateY(-8px);
   }
   to {
     opacity: 1;
@@ -61,7 +87,10 @@ button[type="submit"] {
 
 /* Focus visible for keyboard users */
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   outline: 2px solid var(--tw-ring-color, #0b50da);
   outline-offset: 2px;
 }
@@ -74,4 +103,23 @@ button:focus-visible {
   .mobile-menu:not(.hidden) {
     animation: none;
   }
+}
+
+/* Ensure images never overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Better text wrapping for long words (e.g. Uzbek) */
+p, span, li, label {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Containers respect safe area when present */
+.mx-auto.max-w-7xl {
+  padding-left: max(1rem, env(safe-area-inset-left, 0));
+  padding-right: max(1rem, env(safe-area-inset-right, 0));
 }
