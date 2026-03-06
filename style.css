@@ -123,3 +123,81 @@ p, span, li, label {
   padding-left: max(1rem, env(safe-area-inset-left, 0));
   padding-right: max(1rem, env(safe-area-inset-right, 0));
 }
+
+/* Small phones: reduce padding so text has more room and stays easy to read */
+@media (max-width: 480px) {
+  .mx-auto.max-w-7xl {
+    padding-left: max(0.75rem, env(safe-area-inset-left, 0));
+    padding-right: max(0.75rem, env(safe-area-inset-right, 0));
+  }
+
+  /* Header: slightly less horizontal padding */
+  header .mx-auto {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  /* All main sections: less vertical padding */
+  main section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  /* Hero: even less padding so CTA and text fit comfortably */
+  main section:first-of-type {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Features / How it works / Reviews section headings area */
+  main section .mb-10 {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Feature cards, review cards: less inner padding */
+  main section .rounded-2xl.bg-background-light,
+  main section .rounded-2xl.bg-slate-50,
+  main section .rounded-2xl.dark\:bg-background-dark,
+  main section .rounded-2xl.dark\:bg-slate-900 {
+    padding: 1rem;
+  }
+
+  /* Lead form outer card */
+  #lead-form .rounded-2xl.bg-primary,
+  #lead-form .rounded-3xl.bg-primary {
+    padding: 1rem;
+  }
+
+  /* Lead form inner (white) box */
+  #lead-form .rounded-xl.bg-white,
+  #lead-form .rounded-2xl.bg-white,
+  #lead-form .rounded-xl.dark\:bg-slate-800,
+  #lead-form .rounded-2xl.dark\:bg-slate-800 {
+    padding: 1rem;
+  }
+
+  /* Lead form two-column grid: less gap on small screens */
+  #lead-form .grid.gap-10 {
+    gap: 1.25rem;
+  }
+  #lead-form .flex.flex-col.gap-5 {
+    gap: 0.75rem;
+  }
+
+  /* How it works: less gap and step padding */
+  #how-it-works .gap-10 {
+    gap: 1.5rem;
+  }
+  #how-it-works .pb-8 {
+    padding-bottom: 1.25rem;
+  }
+
+  /* Footer */
+  footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  footer .mt-10 {
+    margin-top: 1.5rem;
+  }
+}
