@@ -11,9 +11,10 @@
     function run() {
       log('[App] run() started, readyState=', document.readyState);
   
-    var SUPABASE_URL = "https://miyoovimtupziuehtcxi.supabase.co";
-    var SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1peW9vdmltdHVweml1ZWh0Y3hpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgwMzkwNzMsImV4cCI6MjA4MzYxNTA3M30.aaCqOF-_s5s5AN-_ElrWZWch8nSVHNmQ1fvC4hi2OoY";
-  
+    // var SUPABASE_URL = "https://miyoovimtupziuehtcxi.supabase.co"; // supabase url dev
+    var SUPABASE_URL = "https://oqzluzzctiirxxhxsboc.supabase.co"; // supabase url prod
+    // var SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1peW9vdmltdHVweml1ZWh0Y3hpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgwMzkwNzMsImV4cCI6MjA4MzYxNTA3M30.aaCqOF-_s5s5AN-_ElrWZWch8nSVHNmQ1fvC4hi2OoY"; // supabase key dev
+    var SUPABASE_KEY =  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9xemx1enpjdGlpcnh4aHhzYm9jIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjkwNTU1NTEsImV4cCI6MjA4NDYzMTU1MX0.fBFFWgbv4teapHpENVums7lrN1Bq5w22enSuDFofbdU"
     function getSupabase() {
       return typeof window !== 'undefined' && window.supabase && window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
     }
@@ -110,9 +111,21 @@
       } catch (e) {
         logErr('[Attribution] sessionStorage setItem failed', e);
       }
+      // Build /go URL with Facebook parameters in Meta-standard format:
+      // id, fbclid, utm_source, utm_medium, utm_campaign, utm_term, utm_content (only non-empty)
+      var goParams = [['id', id]];
+      if (urlData.fbclid) goParams.push(['fbclid', urlData.fbclid]);
+      if (urlData.utm_source) goParams.push(['utm_source', urlData.utm_source]);
+      if (urlData.utm_medium) goParams.push(['utm_medium', urlData.utm_medium]);
+      if (urlData.utm_campaign) goParams.push(['utm_campaign', urlData.utm_campaign]);
+      if (urlData.utm_term) goParams.push(['utm_term', urlData.utm_term]);
+      if (urlData.utm_content) goParams.push(['utm_content', urlData.utm_content]);
+      var goQuery = goParams.map(function(p) { return encodeURIComponent(p[0]) + '=' + encodeURIComponent(p[1]); }).join('&');
+      var goHref = 'go.html?' + goQuery;
+
       var goLinks = document.querySelectorAll('a[href="go.html"], a[href="/go"], a[href="go"], a[href^="go.html"], a[href^="/go?"]');
-      for (var i = 0; i < goLinks.length; i++) goLinks[i].href = 'go.html?id=' + id;
-      log('[Attribution] go links updated, count=', goLinks.length);
+      for (var i = 0; i < goLinks.length; i++) goLinks[i].href = goHref;
+      log('[Attribution] go links updated, count=', goLinks.length, 'params=', goQuery);
   
       whenSupabaseReady(function(client) {
         log('[Attribution] Supabase ready, will save to attribution_logs, id=', id);
