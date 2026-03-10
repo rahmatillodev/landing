@@ -322,7 +322,38 @@
       updateButtons();
       log('[Carousel] ready');
     })();
-  
+
+    // ——— FAQ Accordion ———
+    (function() {
+      var triggers = document.querySelectorAll('.faq-trigger');
+      if (!triggers.length) return;
+      triggers.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var item = btn.closest('.faq-item');
+          var content = document.getElementById(btn.getAttribute('aria-controls'));
+          var isOpen = item.classList.contains('is-open');
+          document.querySelectorAll('.faq-item.is-open').forEach(function(openItem) {
+            if (openItem !== item) {
+              openItem.classList.remove('is-open');
+              var openContent = openItem.querySelector('.faq-content');
+              if (openContent) openContent.setAttribute('aria-hidden', 'true');
+              openItem.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+            }
+          });
+          if (isOpen) {
+            item.classList.remove('is-open');
+            content.setAttribute('aria-hidden', 'true');
+            btn.setAttribute('aria-expanded', 'false');
+          } else {
+            item.classList.add('is-open');
+            content.setAttribute('aria-hidden', 'false');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+      log('[FAQ] accordion ready');
+    })();
+
       log('[App] run() finished');
     }
   

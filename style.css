@@ -1,3 +1,40 @@
+/* Emphasize "mock test" across the page for clarity and SEO */
+.mock-test-emphasis {
+  font-weight: 800;
+  color: #0b50da;
+}
+.dark .mock-test-emphasis {
+  color: #5b8ef4;
+}
+
+/* FAQ Accordion: animated opening and closing */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+.faq-content[aria-hidden="false"],
+.faq-item.is-open .faq-content {
+  max-height: 50rem;
+  transition: max-height 0.4s ease-in-out;
+}
+.faq-icon {
+  transition: transform 0.35s ease-in-out;
+}
+.faq-item.is-open .faq-icon {
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-content,
+  .faq-item.is-open .faq-content {
+    transition: none;
+  }
+  .faq-icon {
+    transition: none;
+  }
+}
+
 /* Base */
 html {
   scroll-behavior: smooth;
