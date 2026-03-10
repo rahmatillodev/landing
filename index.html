@@ -24,7 +24,7 @@
       name="viewport"
     />
     <!-- image -->
-    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
     <title>IELTSSCORE - Muvaffaqiyatingizni amalga oshiring</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link
@@ -76,7 +76,7 @@
           aria-label="ieltscore bosh sahifa"
         >
           <img
-            src="logo.png"
+            src="/assets/logo.png"
             alt=""
             class="h-9 w-9 shrink-0 rounded-lg object-contain sm:h-10 sm:w-10"
             width="40"
@@ -106,7 +106,8 @@
             >Sharhlar</a
           >
           <a
-            href="#lead-form"
+            href="/go"
+            target="_blank"
             class="btn-tap ml-2 hidden min-h-[44px] shrink-0 items-center justify-center rounded-xl bg-primary px-5 py-2.5 text-sm font-bold text-white transition-all hover:bg-primary/90 active:scale-[0.98] md:inline-flex"
             >Ro‘yxatdan o‘tish</a
           >
@@ -147,7 +148,8 @@
             >Sharhlar</a
           >
           <a
-            href="#lead-form"
+          href="/go"
+            target="_blank"
             class="nav-link mt-2 flex min-h-[48px] items-center justify-center gap-2 rounded-xl bg-primary px-4 py-3 text-base font-bold text-white hover:bg-primary/90"
             >Ro‘yxatdan o‘tish</a
           >
@@ -173,7 +175,9 @@
               </p>
               <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:mt-10 sm:flex-row sm:gap-5 lg:justify-start">
                 <a
-                  href="#lead-form"
+                  href="/go"
+                rel="noopener" 
+                  target="_blank"
                   class="btn-tap inline-flex min-h-[52px] w-full max-w-[280px] items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-black text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 active:scale-[0.98] sm:w-auto sm:min-w-[200px]"
                 >
                   <span>Ro‘yxatdan o‘tish</span>
@@ -389,7 +393,7 @@
           </div>
         </div>
       </section>
-      <section
+      <!-- <section
         class="bg-slate-900 py-16 text-white sm:py-20 lg:py-24"
         id="lead-form"
       >
@@ -483,7 +487,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Social Proof / Reviews -->
       <section class="py-16 sm:py-20 lg:py-24" id="reviews">
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
@@ -638,7 +642,7 @@
             aria-label="ieltscore bosh sahifa"
           >
             <img
-              src="logo.png"
+              src="./assets/logo.png"
               alt=""
               class="h-8 w-8 rounded-lg object-contain"
               width="32"
@@ -713,71 +717,9 @@
         });
       })();
 
-      (function () {
-        var FORM_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw0FfK0brxrWs-Ym28lyzV9xRdpF2ARf3lHMxGGQGLAYJLGim7QOKRCVA7p9mlRqwM4RQ/exec";
-        var form = document.getElementById("lead-form-el");
-        var messageEl = document.getElementById("form-message");
-        var submitBtn = document.getElementById("lead-submit-btn");
-        if (!form || !messageEl || !submitBtn) return;
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="script.js"></script>
 
-        function showMessage(text, isError) {
-          messageEl.textContent = text;
-          messageEl.classList.remove("hidden");
-          messageEl.classList.remove("bg-green-100", "text-green-800", "dark:bg-green-900/30", "dark:text-green-300");
-          messageEl.classList.remove("bg-red-100", "text-red-800", "dark:bg-red-900/30", "dark:text-red-300");
-          if (isError) {
-            messageEl.classList.add("bg-red-100", "text-red-800", "dark:bg-red-900/30", "dark:text-red-300");
-          } else {
-            messageEl.classList.add("bg-green-100", "text-green-800", "dark:bg-green-900/30", "dark:text-green-300");
-          }
-        }
-
-        function resetSubmitButton() {
-          submitBtn.disabled = false;
-          submitBtn.textContent = "Ro'yxatdan o'tish";
-        }
-
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          var fullNameInput = document.getElementById("full_name");
-          var phoneInput = document.getElementById("phone");
-          var cityInput = document.getElementById("city");
-          var fullName = fullNameInput && fullNameInput.value ? fullNameInput.value.trim() : "";
-          var phone = phoneInput && phoneInput.value ? phoneInput.value.trim() : "";
-          var city = cityInput && cityInput.value ? cityInput.value.trim() : "";
-
-          if (!fullName || !phone || !city) {
-            showMessage("Iltimos, barcha maydonlarni to'ldiring.", true);
-            return;
-          }
-
-          submitBtn.disabled = true;
-          submitBtn.textContent = "Yuborilmoqda…";
-          showMessage("Ma'lumotlar yuborilmoqda…", false);
-
-          var payload = {
-            full_name: fullName,
-            phone: `'${phone}`,
-            city: city
-          };
-
-          fetch(FORM_SCRIPT_URL, {
-            method: "POST",
-            mode: "no-cors",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload)
-          })
-            .then(function () {
-              showMessage("Muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz.", false);
-              form.reset();
-            })
-            .catch(function () {
-              showMessage("Yuborishda xatolik. Iltimos, keyinroq qaytadan urinib ko'ring.", true);
-            })
-            .finally(resetSubmitButton);
-        });
-      })();
-    </script>
   </body>
 </html>
