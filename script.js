@@ -111,7 +111,7 @@
         logErr('[Attribution] sessionStorage setItem failed', e);
       }
       var goLinks = document.querySelectorAll('a[href="go.html"], a[href="/go"], a[href="go"], a[href^="go.html"], a[href^="/go?"]');
-      for (var i = 0; i < goLinks.length; i++) goLinks[i].href = '/go?id=' + id;
+      for (var i = 0; i < goLinks.length; i++) goLinks[i].href = 'go.html?id=' + id;
       log('[Attribution] go links updated, count=', goLinks.length);
   
       whenSupabaseReady(function(client) {
