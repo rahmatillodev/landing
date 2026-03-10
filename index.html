@@ -68,36 +68,39 @@
 
       <!-- Hero -->
       <section
-        class="relative  w-full h-[calc(100vh-200px)] md:h-full overflow-hidden bg-gradient-to-b from-primary/15 via-primary/5 to-transparent dark:from-primary/20 dark:via-primary/10 pt-12 pb-16 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-28"
+        class="relative w-full min-h-[calc(100vh-180px)] sm:min-h-[calc(100vh-160px)] overflow-hidden bg-gradient-to-b from-primary/15 via-primary/5 to-transparent dark:from-primary/20 dark:via-primary/10 pt-10 pb-14 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-28"
         aria-label="Bosh sahifa"
       >
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
-          <div class="grid items-center gap-4 lg:grid-cols-2 lg:gap-14 xl:gap-16">
+          <div class="grid items-center gap-8 lg:grid-cols-2 lg:gap-14 xl:gap-20">
             <div class="order-2 lg:order-1 text-center lg:text-left">
-              <h1 class="text-3xl font-black tracking-tight text-slate-900 dark:text-white sm:text-4xl md:text-5xl xl:text-6xl">
-                IELTS ballingizni
-                <span class="text-primary">oshiring</span>
+              <h1 class="hero-title text-2xl font-black tracking-tight text-slate-900 dark:text-white sm:text-3xl md:text-4xl xl:text-5xl leading-tight max-w-xl mx-auto lg:mx-0">
+                Real IELTS imtihonini oldindan sinab ko‘ring
               </h1>
-              <p class="mt-4 text-base text-slate-600 dark:text-slate-300 sm:mt-6 sm:text-lg md:text-xl">
-                Haqiqiy imtihon tajribasiga yaqin <span class="mock-test-emphasis">Mock Test</span> orqali darajangizni biling va kerakli IELTS ballga yaqinlashing.
-              </p>
-              <div class="mt-8 hidden flex-col items-center justify-center gap-4 sm:mt-10 sm:flex sm:flex-row sm:gap-5 lg:justify-start">
+              <div class="hero-body mt-6 sm:mt-8 space-y-5 max-w-xl mx-auto lg:mx-0">
+                <p class="text-sm text-slate-600 dark:text-slate-300 sm:text-base md:text-lg leading-relaxed">
+                  IELTS topshirishdan oldin real imtihon qanday o‘tishini his qilib ko‘rganmisiz? Bizning markazda siz haqiqiy IELTS CDI kompyuter tizimida to‘liq <span class="mock-test-emphasis">Mock Test</span> topshirasiz. Test jarayoni real imtihon kabi tashkil qilinadi — vaqt bosimi, platforma va muhit hammasi xuddi asl IELTSdagidek.
+                </p>
+                <p class="text-sm text-slate-600 dark:text-slate-300 sm:text-base leading-relaxed">
+                  Test tugagandan so‘ng Writing va Speaking qismlari 8+ bandli IELTS ekspertlari tomonidan tekshiriladi, va siz 48 soat ichida aniq band natijangizni olasiz. Bu test sizga qaysi darajada ekanligingizni va qaysi skill ustida ishlash kerakligini aniq ko‘rsatadi.
+                </p>
+              </div>
+              <div class="mt-8 flex flex-col items-center gap-4 sm:mt-10 sm:flex-row sm:gap-5 lg:justify-start">
                 <a
                   href="go.html"
-                rel="noopener" 
+                  rel="noopener"
                   target="_blank"
-                  class="btn-tap inline-flex min-h-[52px] w-full max-w-[280px] items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-black text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 active:scale-[0.98] sm:w-auto sm:min-w-[200px]"
+                  class="btn-tap inline-flex min-h-[52px] w-full max-w-[280px] items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-black text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 active:scale-[0.98] sm:w-auto sm:min-w-[220px]"
                 >
-                  <span>Ro‘yxatdan o‘tish</span>
+                  <span>Mock Testga yozilish</span>
                   <span class="material-symbols-outlined text-xl">arrow_forward</span>
                 </a>
               </div>
             </div>
             <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
-              <!-- Replace src with your own hero image (e.g. hero.jpg) -->
               <img
                 src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80"
-                alt="IELTS tayyorgarlik va muvaffaqiyat"
+                alt="IELTS Mock Test — real imtihon muhiti"
                 width="560"
                 height="400"
                 class="w-full max-w-md rounded-2xl object-cover shadow-xl ring-2 ring-primary/10 dark:ring-white/10 lg:max-w-lg xl:max-w-xl"
@@ -107,191 +110,193 @@
         </div>
       </section>
 
-      <!-- Features Grid -->
-      <section class="bg-primary/5 py-16 sm:py-20 lg:py-24" id="features">
+      <!-- Why Mock Test -->
+      <section class="bg-primary/5 py-16 sm:py-24 lg:py-28" id="why-mock">
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
-          <div class="mb-10 text-center sm:mb-16">
-            <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl">
-              Nima uchun bizning <span class="mock-test-emphasis">Mock Test</span>imiz?
+          <header class="section-head mb-12 sm:mb-16">
+            <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl text-slate-900 dark:text-white">
+              Nega <span class="mock-test-emphasis">Mock Test</span> topshirish muhim?
             </h2>
-            <p
-              class="mt-3 max-w-2xl mx-auto text-slate-600 dark:text-slate-400 sm:mt-4 text-sm sm:text-base"
-            >
-            Haqiqiy imtihonga yaqin mock test orqali darajangizni aniqlang va zaif tomonlaringizni biling.
+            <p class="section-head-sub mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
+              Ko‘pchilik talabalar IELTSga tayyorlanadi, lekin real imtihon muhiti qanday bo‘lishini bilmaydi. Natijada ular imtihonda quyidagilarga duch keladi:
             </p>
+          </header>
+          <div class="grid gap-5 sm:gap-6 md:grid-cols-3 mb-12 sm:mb-14">
+            <div class="rounded-2xl border border-primary/10 bg-background-light dark:bg-background-dark p-5 sm:p-6 shadow-sm transition-all hover:shadow-md">
+              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary dark:bg-primary/20 mb-4">
+                <span class="material-symbols-outlined text-2xl">schedule</span>
+              </div>
+              <h3 class="text-base font-bold sm:text-lg text-slate-900 dark:text-white">Vaqt bosimiga moslasha olmaydi</h3>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Real vaqt chegaralari bilan tanishmasdan imtihonga kirish xavfli.</p>
+            </div>
+            <div class="rounded-2xl border border-primary/10 bg-background-light dark:bg-background-dark p-5 sm:p-6 shadow-sm transition-all hover:shadow-md">
+              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary dark:bg-primary/20 mb-4">
+                <span class="material-symbols-outlined text-2xl">computer</span>
+              </div>
+              <h3 class="text-base font-bold sm:text-lg text-slate-900 dark:text-white">Platformaga o‘rganmagan bo‘ladi</h3>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">CDI tizimini oldindan ko‘rmagan talabalar vaqt yo‘qotadi.</p>
+            </div>
+            <div class="rounded-2xl border border-primary/10 bg-background-light dark:bg-background-dark p-5 sm:p-6 shadow-sm transition-all hover:shadow-md">
+              <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary dark:bg-primary/20 mb-4">
+                <span class="material-symbols-outlined text-2xl">psychology</span>
+              </div>
+              <h3 class="text-base font-bold sm:text-lg text-slate-900 dark:text-white">Stress sababli pastroq natija</h3>
+              <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Tanish bo‘lmagan muhit stressni oshiradi va ballga ta’sir qiladi.</p>
+            </div>
           </div>
-          <div class="grid gap-5 sm:gap-8 md:grid-cols-3">
-            <div
-              class="rounded-2xl border border-primary/10 bg-background-light p-6 shadow-sm transition-all hover:shadow-md dark:bg-background-dark sm:p-8"
-            >
-              <div
-                class="mb-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary text-white sm:mb-6 sm:h-14 sm:w-14"
-              >
-                <span class="material-symbols-outlined text-2xl sm:text-3xl"
-                  >person_check</span
-                >
-              </div>
-              <h3 class="mb-2 text-lg font-bold sm:mb-3 sm:text-xl">
-                Ekspertlar tekshiradi
-              </h3>
-              <p
-                class="text-sm text-slate-600 dark:text-slate-400 sm:text-base"
-              >
-                AI qisqa yo‘llari yo‘q. Har bir bo‘lim bo‘yicha batafsil fikr —
-                aniqlik va haqiqiy tushuncha uchun.
-              </p>
-            </div>
-            <div
-              class="rounded-2xl border border-primary/10 bg-background-light p-6 shadow-sm transition-all hover:shadow-md dark:bg-background-dark sm:p-8"
-            >
-              <div
-                class="mb-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary text-white sm:mb-6 sm:h-14 sm:w-14"
-              >
-                <span class="material-symbols-outlined text-2xl sm:text-3xl"
-                  >timer</span
-                >
-              </div>
-              <h3 class="mb-2 text-lg font-bold sm:mb-3 sm:text-xl">
-                48 soat ichida natija
-              </h3>
-              <p
-                class="text-sm text-slate-600 dark:text-slate-400 sm:text-base"
-              >
-              Testdan keyin 48 soat ichida batafsil natija va rivojlanish uchun tavsiyalarni oling.
-              </p>
-            </div>
-            <div
-              class="rounded-2xl border border-primary/10 bg-background-light p-6 shadow-sm transition-all hover:shadow-md dark:bg-background-dark sm:p-8"
-            >
-              <div
-                class="mb-5 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary text-white sm:mb-6 sm:h-14 sm:w-14"
-              >
-                <span class="material-symbols-outlined text-2xl sm:text-3xl"
-                  >workspace_premium</span
-                >
-              </div>
-              <h3 class="mb-2 text-lg font-bold sm:mb-3 sm:text-xl">
-                8.0+ ball mentorlar
-              </h3>
-              <p
-                class="text-sm text-slate-600 dark:text-slate-400 sm:text-base"
-              >
-              8.0+ ball olgan mentorlar bilan speaking suhbat orqali darajangizni aniq baholang.
-              </p>
-            </div>
+          <div class="rounded-2xl border border-primary/15 bg-background-light dark:bg-background-dark p-6 sm:p-8 lg:p-10 max-w-3xl mx-auto text-center sm:text-left space-y-5">
+            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
+              Shuni ham unutmang — real IELTS imtihoni arzon emas. Agar tayyor bo‘lmasdan topshirsangiz, imtihon uchun sarflangan pulingiz va vaqtingiz bekorga ketishi mumkin.
+            </p>
+            <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base font-medium leading-relaxed">
+              <span class="mock-test-emphasis">Mock Test</span> esa sizga real imtihonni oldindan boshdan kechirish, o‘z darajangizni bilish va haqiqiy IELTSdan oldin nimani yaxshilash kerakligini tushunishga yordam beradi.
+            </p>
           </div>
         </div>
       </section>
-      <!-- How it Works -->
-      <section class="py-16 sm:py-20 lg:py-24" id="how-it-works">
+
+      <!-- What You Experience -->
+      <section class="py-16 sm:py-24 lg:py-28" id="experience">
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
-          <div class="grid items-center gap-16 lg:grid-cols-2">
-            <div class="order-2 lg:order-1">
-              <div class="relative flex flex-col gap-10">
-                <div class="flex gap-4 sm:gap-6">
-                  <div class="relative flex flex-col items-center">
-                    <div
-                      class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white sm:h-12 sm:w-12"
-                    >
-                      1
-                    </div>
-                    <div class="h-full w-0.5 bg-primary/20"></div>
-                  </div>
-                  <div class="pb-8 sm:pb-10">
-                    <h4 class="text-lg font-bold sm:text-xl">
-                      Onlayn ro‘yxatdan o‘ting
-                    </h4>
-                    <p
-                      class="mt-2 text-sm text-slate-600 dark:text-slate-400 sm:text-base"
-                    >
-                      O‘zingizga qulay sanani tanlang va oddiy onlayn forma
-                      orqali o‘rinni band qiling.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex gap-4 sm:gap-6">
-                  <div class="relative flex flex-col items-center">
-                    <div
-                      class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white sm:h-12 sm:w-12"
-                    >
-                      2
-                    </div>
-                    <div class="h-full w-0.5 bg-primary/20"></div>
-                  </div>
-                  <div class="pb-8 sm:pb-10">
-                    <h4 class="text-lg font-bold sm:text-xl">
-                      To‘liq testni topshiring
-                    </h4>
-                    <p
-                      class="mt-2 text-sm text-slate-600 dark:text-slate-400 sm:text-base"
-                    >
-                      Listening, Reading va Writing bo‘limlarini simulyatsiya
-                      qilingan imtixon muhitida bajaring.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex gap-4 sm:gap-6">
-                  <div class="relative flex flex-col items-center">
-                    <div
-                      class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white sm:h-12 sm:w-12"
-                    >
-                      3
-                    </div>
-                    <div class="h-full w-0.5 bg-primary/20"></div>
-                  </div>
-                  <div class="pb-8 sm:pb-10">
-                    <h4 class="text-lg font-bold sm:text-xl">
-                      Speaking suhbati
-                    </h4>
-                    <p
-                      class="mt-2 text-sm text-slate-600 dark:text-slate-400 sm:text-base"
-                    >
-                      Katta mentor bilan jonli tarzda yuzma-yuz sessiyada
-                      qatnashing — speaking darajangizni bilib oling.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex gap-4 sm:gap-6">
-                  <div
-                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white sm:h-12 sm:w-12"
-                  >
-                    4
-                  </div>
-                  <div>
-                    <h4 class="text-lg font-bold sm:text-xl">
-                      Batafsil hisobot
-                    </h4>
-                    <p
-                      class="mt-2 text-sm text-slate-600 dark:text-slate-400 sm:text-base"
-                    >
-                      48 soat ichida ekspertlar sizga natijangizni taqdim
-                      etadilar.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="order-1 flex flex-col gap-4 sm:gap-6 lg:order-2">
-              <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl">
-                Muvaffaqiyat — jarayon, <br />
-                tasodif emas
+          <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+            <div class="order-2 lg:order-1 experience-content">
+              <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl text-slate-900 dark:text-white">
+                Bizda siz real IELTS tajribasini olasiz
               </h2>
-              <p
-                class="text-base text-slate-600 dark:text-slate-400 sm:text-lg"
-              >
-                Bizning tuzilgan yondashuvimiz nafaqat test topshirishni, balki
-                har qadamda mutaxassis yo‘riqnomasi bilan xatolardan saboq
-                olishingizni ta’minlaydi.
+              <p class="mt-5 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed max-w-xl">
+                Bu oddiy practice test emas. Mock test quyidagicha o‘tkaziladi:
               </p>
+              <ul class="mt-6 sm:mt-8 space-y-4" role="list">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary shrink-0 mt-0.5">check_circle</span>
+                  <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base"><strong class="text-slate-900 dark:text-white">Real CDI IELTS</strong> kompyuter platformasi</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary shrink-0 mt-0.5">check_circle</span>
+                  <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base"><strong class="text-slate-900 dark:text-white">Real vaqt</strong> chegaralari</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary shrink-0 mt-0.5">check_circle</span>
+                  <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base"><strong class="text-slate-900 dark:text-white">Real test</strong> struktura</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary shrink-0 mt-0.5">check_circle</span>
+                  <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base"><strong class="text-slate-900 dark:text-white">Real Speaking</strong> intervyu</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-primary shrink-0 mt-0.5">check_circle</span>
+                  <span class="text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed"><strong class="text-slate-900 dark:text-white">Professional Writing</strong> tekshiruv</span>
+                </li>
+              </ul>
+              <p class="mt-8 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed max-w-xl">
+                Boshqacha aytganda, siz real IELTS qanday o‘tishini oldindan his qilasiz. Bu esa sizga haqiqiy imtihonda kutilmagan holatlarga duch kelmaslik va o‘zingizni ancha ishonchli his qilishga yordam beradi.
+              </p>
+            </div>
+            <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
               <img
-                class="w-full max-w-full rounded-2xl shadow-lg object-cover"
-                alt="Mentor talabaga test tushunchalarini tushuntirayapti"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7FqSS-ZClMeZvh1BTaMThk1aRpQpOjmdTMEMERilc4QL-8U9WN5BX4__IGABAoKCrWRwr-fB9mh8CsLA2S7LSlSnAD4qOtMeztpQIg-uk_z46MYB4JYPRGGAlSzkoyXDkhHmtm3FHdy7i3JlTRJ6WSxxw7lSvkhHJkW9gBD6k-4FewfAxpxd0DSR0uObEObnaw6GsdbmQW6ZJXir9creh8wVVu1i-UEp4SlR4DLSkO2ldIsCJft3vXtKUnniC5oFmL-YiEr70r7mg"
+                class="w-full max-w-md rounded-2xl shadow-lg object-cover"
+                alt="Real IELTS Mock Test muhiti"
+                src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80"
               />
             </div>
           </div>
         </div>
       </section>
+
+      <!-- What You Get (Mock Test tarkibi) -->
+      <section class="bg-primary/5 py-16 sm:py-24 lg:py-28" id="what-you-get">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
+          <header class="section-head mb-12 sm:mb-16">
+            <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl text-slate-900 dark:text-white">
+              <span class="mock-test-emphasis">Mock Test</span> tarkibi
+            </h2>
+            <p class="section-head-sub mt-4 max-w-2xl mx-auto text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
+              Mock test quyidagi 4 ta skillni o‘z ichiga oladi:
+            </p>
+          </header>
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 max-w-4xl mx-auto">
+            <div class="rounded-2xl border border-primary/15 bg-background-light dark:bg-background-dark p-5 sm:p-6 text-center shadow-sm transition-all hover:shadow-md">
+              <span class="material-symbols-outlined text-3xl sm:text-4xl text-primary">hearing</span>
+              <h3 class="mt-3 font-bold text-slate-900 dark:text-white sm:text-lg">Listening</h3>
+            </div>
+            <div class="rounded-2xl border border-primary/15 bg-background-light dark:bg-background-dark p-5 sm:p-6 text-center shadow-sm transition-all hover:shadow-md">
+              <span class="material-symbols-outlined text-3xl sm:text-4xl text-primary">menu_book</span>
+              <h3 class="mt-3 font-bold text-slate-900 dark:text-white sm:text-lg">Reading</h3>
+            </div>
+            <div class="rounded-2xl border border-primary/15 bg-background-light dark:bg-background-dark p-5 sm:p-6 text-center shadow-sm transition-all hover:shadow-md">
+              <span class="material-symbols-outlined text-3xl sm:text-4xl text-primary">edit_note</span>
+              <h3 class="mt-3 font-bold text-slate-900 dark:text-white sm:text-lg">Writing</h3>
+            </div>
+            <div class="rounded-2xl border border-primary/15 bg-background-light dark:bg-background-dark p-5 sm:p-6 text-center shadow-sm transition-all hover:shadow-md">
+              <span class="material-symbols-outlined text-3xl sm:text-4xl text-primary">record_voice_over</span>
+              <h3 class="mt-3 font-bold text-slate-900 dark:text-white sm:text-lg">Speaking</h3>
+            </div>
+          </div>
+          <div class="mt-10 sm:mt-12 space-y-5 text-center max-w-2xl mx-auto">
+            <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
+              Speaking qismi real intervyu formatida, Writing esa ekspertlar tomonidan qo‘lda tekshiriladi. Test natijasi sizga faqat band emas, balki qaysi joyingizni yaxshilash kerakligi bilan birga beriladi.
+            </p>
+            <p class="text-slate-700 dark:text-slate-300 text-sm sm:text-base font-medium leading-relaxed">
+              Bu orqali siz real IELTSga ancha tayyor holda borasiz va imtihon pulini bekorga sarflash ehtimolini kamaytirasiz.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Price -->
+      <section class="py-16 sm:py-24 lg:py-28" id="price">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
+          <div class="price-block max-w-xl mx-auto">
+            <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl text-slate-900 dark:text-white text-center">
+              To‘liq IELTS <span class="mock-test-emphasis">Mock Test</span>
+            </h2>
+            <p class="mt-8 text-4xl sm:text-5xl font-black text-primary text-center">150,000 so‘m</p>
+            <p class="mt-6 text-slate-600 dark:text-slate-400 text-sm sm:text-base text-center">
+              Bu narxga quyidagilar kiradi:
+            </p>
+            <ul class="mt-6 space-y-4 text-left max-w-md mx-auto price-list" role="list">
+              <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                <span class="material-symbols-outlined text-primary shrink-0">check_circle</span>
+                Real IELTS CDI platforma
+              </li>
+              <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                <span class="material-symbols-outlined text-primary shrink-0">check_circle</span>
+                4 ta skill bo‘yicha to‘liq test
+              </li>
+              <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                <span class="material-symbols-outlined text-primary shrink-0">check_circle</span>
+                Expert Writing tekshiruv
+              </li>
+              <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base">
+                <span class="material-symbols-outlined text-primary shrink-0">check_circle</span>
+                Face-to-face Speaking intervyu
+              </li>
+              <li class="flex items-center gap-3 text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                <span class="material-symbols-outlined text-primary shrink-0">check_circle</span>
+                To‘liq band baholash
+              </li>
+            </ul>
+            <p class="mt-8 text-slate-600 dark:text-slate-400 text-sm sm:text-base text-center leading-relaxed">
+              Natijalar 48 soat ichida yuboriladi.
+            </p>
+            <p class="mt-4 text-slate-700 dark:text-slate-300 text-sm sm:text-base text-center leading-relaxed">
+              Real IELTS imtihonining narxini hisobga olsak, Mock Test topshirish imtihonga tayyor ekanligingizni tekshirishning eng oqilona usullaridan biridir.
+            </p>
+            <div class="mt-10 text-center">
+              <a
+                href="go.html"
+                rel="noopener"
+                target="_blank"
+                class="btn-tap inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-black text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 hover:shadow-xl active:scale-[0.98]"
+              >
+                <span>Mock Testga yozilish</span>
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- <section
         class="bg-slate-900 py-16 text-white sm:py-20 lg:py-24"
         id="lead-form"
@@ -387,139 +392,72 @@
           </div>
         </div>
       </section> -->
-      <!-- Social Proof / Reviews -->
-      <section class="py-16 sm:py-20 lg:py-24" id="reviews">
+      <!-- Testimonials -->
+      <section class="py-16 sm:py-24 lg:py-28 bg-primary/5" id="testimonials">
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
-          <div class="mb-10 text-center sm:mb-16">
-            <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl">
-              IELTS o‘rganuvchilar bizga ishonadilar
+          <header class="section-head mb-12 sm:mb-16">
+            <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl text-slate-900 dark:text-white">
+              Talabalarimiz <span class="mock-test-emphasis">Mock Test</span> haqida
             </h2>
-            <p
-              class="mt-3 max-w-xl mx-auto text-slate-600 dark:text-slate-400 sm:mt-4 text-sm sm:text-base"
-            >
-              Orzu qilgan ballga erishgan yuzlab talabalar qatoriga qo‘shiling.
+            <p class="section-head-sub mt-4 max-w-xl mx-auto text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
+              Real IELTSdan oldin sinab ko‘rganlarimizning fikrlari.
             </p>
-          </div>
+          </header>
           <div class="grid gap-6 sm:gap-8 md:grid-cols-3">
-            <div class="rounded-2xl bg-slate-50 p-6 dark:bg-slate-900 sm:p-8">
-              <div class="flex gap-0.5 text-yellow-400" aria-hidden="true">
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
+            <div class="testimonial-card rounded-2xl border border-primary/10 bg-background-light dark:bg-background-dark p-6 sm:p-8 shadow-sm transition-all hover:shadow-md flex flex-col">
+              <div class="flex gap-0.5 text-amber-400 mb-5" aria-hidden="true">
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
               </div>
-              <p
-                class="mt-4 text-sm italic text-slate-600 dark:text-slate-400 sm:text-base"
-              >
-                «Writing bo‘limi bo‘yicha fikr hammasi o‘zgartirdi. Nima uchun
-                6.5 da qotib qolganimni nihoyat tushundim!»
-              </p>
-              <div class="mt-5 flex items-center gap-3 sm:mt-6 sm:gap-4">
-                <img
-                  class="h-10 w-10 shrink-0 rounded-full object-cover"
-                  alt="Foydalanuvchi"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgyBjNMAcPgy32lpT6event7VtZ2Xpb_V6pZNfMOjA0qC4l4yJcH8dX7cemoTDhnpETTfRROW5j68gFTlgRrvB7Alljaum3mtS7jCY63neCdiVKynVSZVaPLwbf-irFMnPHSJLLyCqqXY4vp_ATY4jZX0bcgeaPrZ6OCO4gQsErada4FHf1_vD7sooGhsu6Tw74OU-IXJjU-GqgAKwlw02UqImqDNzRTw-2YUsEjEnriQyqElj1FJb7dgN_F_AYwaOAJLUYDFpfTWI"
-                />
+              <blockquote class="testimonial-quote text-slate-600 dark:text-slate-400 text-sm sm:text-base italic flex-1 leading-relaxed">
+                «Mock test haqiqiy imtihonga juda o‘xshash edi — platforma, vaqt, hammasi. 48 soat ichida Writing va Speaking bo‘yicha aniq feedback oldim. Real IELTSdan oldin topshirishga qaror qildim.»
+              </blockquote>
+              <div class="mt-6 flex items-center gap-3 pt-5 border-t border-slate-200 dark:border-slate-700">
+                <img class="h-11 w-11 shrink-0 rounded-full object-cover ring-2 ring-primary/20" alt="" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" width="44" height="44" />
                 <div class="min-w-0">
-                  <p class="text-xs text-slate-500">7.5 ball</p>
+                  <p class="text-sm font-bold text-slate-900 dark:text-white">Sarvar M.</p>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">8.0 ball</p>
                 </div>
               </div>
             </div>
-            <div class="rounded-2xl bg-slate-50 p-6 dark:bg-slate-900 sm:p-8">
-              <div class="flex gap-0.5 text-yellow-400" aria-hidden="true">
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
+            <div class="testimonial-card rounded-2xl border border-primary/10 bg-background-light dark:bg-background-dark p-6 sm:p-8 shadow-sm transition-all hover:shadow-md flex flex-col">
+              <div class="flex gap-0.5 text-amber-400 mb-5" aria-hidden="true">
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
               </div>
-              <p
-                class="mt-4 text-sm italic text-slate-600 dark:text-slate-400 sm:text-base"
-              >
-                «<span class="mock-test-emphasis">Mock test</span> haqiqiy imtihonga o‘xshash edi. Mentorlar juda
-                qo‘llab-quvvatlovchi va professional.»
-              </p>
-              <div class="mt-5 flex items-center gap-3 sm:mt-6 sm:gap-4">
-                <img
-                  class="h-10 w-10 shrink-0 rounded-full object-cover"
-                  alt="Foydalanuvchi"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv_a83IgCMhgpsh9WNX_zyjmrCvGCaEUwtvrwBEj8pl0_R3i3pykzUy0HwYOsE5GOGQhoXi1Fd1CD8WieHGJKV8toocFyuMKW8sZC95kE0GVw3X34YSk_wjkMmH_-QwXW99Sb4RahmT1Y_bx7SLrNV_v6liTsxkQXEHtB__lAMEOP-OSFAkX11_aET92uuTO0K9sNdmpU4A93CoULBduEYUhLrhzokaPgwC389doryDSKKZMCdK0ijQfFJRg_JGo9PgFHYDVuZIO8W"
-                />
+              <blockquote class="testimonial-quote text-slate-600 dark:text-slate-400 text-sm sm:text-base italic flex-1 leading-relaxed">
+                «Writing bo‘limi bo‘yicha ekspert fikri hammasi o‘zgartirdi. Nima uchun 6.5 da qotib qolganimni nihoyat tushundim. Real imtihonga ancha ishonch bilan bordim.»
+              </blockquote>
+              <div class="mt-6 flex items-center gap-3 pt-5 border-t border-slate-200 dark:border-slate-700">
+                <img class="h-11 w-11 shrink-0 rounded-full object-cover ring-2 ring-primary/20" alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" width="44" height="44" />
                 <div class="min-w-0">
-                  <p class="text-sm font-bold">Sarvar M.</p>
-                  <p class="text-xs text-slate-500">8.0 ball</p>
+                  <p class="text-sm font-bold text-slate-900 dark:text-white">Dilnoza K.</p>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">7.5 ball</p>
                 </div>
               </div>
             </div>
-            <div class="rounded-2xl bg-slate-50 p-6 dark:bg-slate-900 sm:p-8">
-              <div class="flex gap-0.5 text-yellow-400" aria-hidden="true">
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
-                <span
-                  class="material-symbols-outlined fill-current text-lg sm:text-base"
-                  >star</span
-                >
+            <div class="testimonial-card rounded-2xl border border-primary/10 bg-background-light dark:bg-background-dark p-6 sm:p-8 shadow-sm transition-all hover:shadow-md flex flex-col">
+              <div class="flex gap-0.5 text-amber-400 mb-5" aria-hidden="true">
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
+                <span class="material-symbols-outlined fill-current text-lg">star</span>
               </div>
-              <p
-                class="mt-4 text-sm italic text-slate-600 dark:text-slate-400 sm:text-base"
-              >
-                «IELTS ni jiddiy o‘rganayotganlar yaxshi. 48 soat ichida natija
-                tez tayyorgarlik ko‘rishga yordam berdi.»
-              </p>
-              <div class="mt-5 flex items-center gap-3 sm:mt-6 sm:gap-4">
-                <img
-                  class="h-10 w-10 shrink-0 rounded-full object-cover"
-                  alt="Foydalanuvchi"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXyGn02WoGGdr5Sg_C2Zgq1dpxRKlNrcOx9Lwff8-YXgxml9XiLMlLYxVOhwQz8tQwUwFg2lrNt2jydW81svtl_zB9t57ZZJ-Kc67frOxO3OkQRs2vHL1ZX_XwsPGujLSv1EqOFuDXDCEc63_GUXnbitwfiIdrK473xZXdonPzlNClVqcxJYm67Wa9-dl2h7n5VHChMck5ZeW7oVrrU-GoboUfYZ6aUSu3x-G8fL-rtAy4XgCR8p483JGTzlVMlMcIpB0m5k5EML0x"
-                />
+              <blockquote class="testimonial-quote text-slate-600 dark:text-slate-400 text-sm sm:text-base italic flex-1 leading-relaxed">
+                «Speaking face-to-face o‘tdi, xuddi real imtihondagi kabi. 48 soat ichida natija keldi, qaysi skill ustida ishlash kerakligi ham yozilgan edi. Juda foydali.»
+              </blockquote>
+              <div class="mt-6 flex items-center gap-3 pt-5 border-t border-slate-200 dark:border-slate-700">
+                <img class="h-11 w-11 shrink-0 rounded-full object-cover ring-2 ring-primary/20" alt="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" width="44" height="44" />
                 <div class="min-w-0">
-                  <p class="text-sm font-bold">Ahmadjon R.</p>
-                  <p class="text-xs text-slate-500">7.0 ball</p>
+                  <p class="text-sm font-bold text-slate-900 dark:text-white">Ahmadjon R.</p>
+                  <p class="text-xs text-slate-500 dark:text-slate-400">7.0 ball</p>
                 </div>
               </div>
             </div>
@@ -528,93 +466,112 @@
       </section>
 
       <!-- FAQ Accordion -->
-      <section class="py-16 sm:py-20 lg:py-24 bg-primary/5" id="faq">
+      <section class="py-16 sm:py-24 lg:py-28" id="faq">
         <div class="mx-auto max-w-3xl px-4 sm:px-6">
-          <div class="mb-10 text-center sm:mb-16">
-            <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl">
+          <header class="section-head mb-12 sm:mb-16">
+            <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl text-slate-900 dark:text-white">
               Tez-tez so‘raladigan savollar
             </h2>
-            <p class="mt-3 text-slate-600 dark:text-slate-400 sm:mt-4 text-sm sm:text-base">
+            <p class="section-head-sub mt-4 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
               <span class="mock-test-emphasis">Mock test</span> jarayoni va natijalar haqida eng ko‘p so‘raladigan savollar.
             </p>
-          </div>
-          <div class="faq-accordion space-y-3" role="list">
+          </header>
+          <div class="faq-accordion space-y-4" role="list">
             <div class="faq-item rounded-xl border border-primary/10 bg-background-light dark:bg-background-dark overflow-hidden shadow-sm" role="listitem">
-              <button
-                type="button"
-                class="faq-trigger w-full flex items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5 text-left font-bold text-slate-900 dark:text-white hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                aria-expanded="false"
-                aria-controls="faq-answer-1"
-                id="faq-question-1"
-              >
-                <span>IELTS Mock Test nima va u sizga qanday yordam beradi?</span>
+              <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5 text-left font-bold text-slate-900 dark:text-white hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 faq-trigger-btn" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
+                <span class="text-left pr-2">Mock test topshirishdan oldin tayyor bo‘lish kerakmi?</span>
                 <span class="faq-icon material-symbols-outlined shrink-0 text-primary transition-transform duration-300 ease-out" aria-hidden="true">expand_more</span>
               </button>
               <div id="faq-answer-1" class="faq-content" role="region" aria-labelledby="faq-question-1" aria-hidden="true">
-                <div class="faq-inner p-5 sm:p-6 text-slate-600 dark:text-slate-400 text-sm sm:text-base border-t border-primary/10">
-                  Mock test — haqiqiy IELTS imtihoniga o‘xshash mashq testi. Listening, Reading, Writing va Speaking barcha bo‘limlari ekspertlar tomonidan tekshiriladi. Haqiqiy imtihonga kirishdan oldin darajangizni bilishingiz va zaif tomonlaringizni bartaraf etishingiz uchun juda foydali.
+                <div class="faq-inner p-5 sm:p-6 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed border-t border-primary/10">
+                  Yo‘q. Mock test aynan tayyorlanish jarayonining bir qismi. Bu test sizga qaysi skill ustida ishlash kerakligini ko‘rsatadi. Shundan keyin siz tayyorgarlikni to‘g‘ri yo‘nalishda davom ettirasiz.
                 </div>
               </div>
             </div>
             <div class="faq-item rounded-xl border border-primary/10 bg-background-light dark:bg-background-dark overflow-hidden shadow-sm" role="listitem">
-              <button
-                type="button"
-                class="faq-trigger w-full flex items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5 text-left font-bold text-slate-900 dark:text-white hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                aria-expanded="false"
-                aria-controls="faq-answer-2"
-                id="faq-question-2"
-              >
-                <span>Natijani qachon olaman?</span>
+              <button type="button" class="faq-trigger faq-trigger-btn w-full flex items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5 text-left font-bold text-slate-900 dark:text-white hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
+                <span class="text-left pr-2">Mock test pullikmi?</span>
                 <span class="faq-icon material-symbols-outlined shrink-0 text-primary transition-transform duration-300 ease-out" aria-hidden="true">expand_more</span>
               </button>
               <div id="faq-answer-2" class="faq-content" role="region" aria-labelledby="faq-question-2" aria-hidden="true">
-                <div class="faq-inner p-5 sm:p-6 text-slate-600 dark:text-slate-400 text-sm sm:text-base border-t border-primary/10">
-                  Test topshirganingizdan keyin 48 soat ichida batafsil hisobot va ballingizni taqdim etamiz. Tez fikr — tezroq tayyorgarlik va rivojlanish imkonini beradi.
+                <div class="faq-inner p-5 sm:p-6 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed border-t border-primary/10">
+                  Ha. To‘liq IELTS Mock Test narxi 150,000 so‘m. Bu narxga barcha 4 skill va professional tekshiruv kiradi.
                 </div>
               </div>
             </div>
             <div class="faq-item rounded-xl border border-primary/10 bg-background-light dark:bg-background-dark overflow-hidden shadow-sm" role="listitem">
-              <button
-                type="button"
-                class="faq-trigger w-full flex items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5 text-left font-bold text-slate-900 dark:text-white hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                aria-expanded="false"
-                aria-controls="faq-answer-3"
-                id="faq-question-3"
-              >
-                <span>Speaking qanday o‘tadi?</span>
+              <button type="button" class="faq-trigger faq-trigger-btn w-full flex items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5 text-left font-bold text-slate-900 dark:text-white hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
+                <span class="text-left pr-2">Writing va Speakingni kim tekshiradi?</span>
                 <span class="faq-icon material-symbols-outlined shrink-0 text-primary transition-transform duration-300 ease-out" aria-hidden="true">expand_more</span>
               </button>
               <div id="faq-answer-3" class="faq-content" role="region" aria-labelledby="faq-question-3" aria-hidden="true">
-                <div class="faq-inner p-5 sm:p-6 text-slate-600 dark:text-slate-400 text-sm sm:text-base border-t border-primary/10">
-                  Speaking bo‘limi 8.0+ ball olgan mentor bilan yuzma-yuz (yoki onlayn) suhbat shaklida o‘tkaziladi. Haqiqiy IELTS speaking formatiga mos ravishda baholanadi va batafsil fikr beriladi.
+                <div class="faq-inner p-5 sm:p-6 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed border-t border-primary/10">
+                  Writing va Speaking qismlari 8+ bandli IELTS ekspertlari tomonidan tekshiriladi. AI yoki avtomatik tekshiruv ishlatilmaydi.
                 </div>
               </div>
             </div>
             <div class="faq-item rounded-xl border border-primary/10 bg-background-light dark:bg-background-dark overflow-hidden shadow-sm" role="listitem">
-              <button
-                type="button"
-                class="faq-trigger w-full flex items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5 text-left font-bold text-slate-900 dark:text-white hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                aria-expanded="false"
-                aria-controls="faq-answer-4"
-                id="faq-question-4"
-              >
-                <span>Barcha bo‘limlar kiritilganmi?</span>
+              <button type="button" class="faq-trigger faq-trigger-btn w-full flex items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5 text-left font-bold text-slate-900 dark:text-white hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
+                <span class="text-left pr-2">Natijalar qachon chiqadi?</span>
                 <span class="faq-icon material-symbols-outlined shrink-0 text-primary transition-transform duration-300 ease-out" aria-hidden="true">expand_more</span>
               </button>
               <div id="faq-answer-4" class="faq-content" role="region" aria-labelledby="faq-question-4" aria-hidden="true">
-                <div class="faq-inner p-5 sm:p-6 text-slate-600 dark:text-slate-400 text-sm sm:text-base border-t border-primary/10">
-                  Ha. Listening, Reading, Writing va Speaking — to‘rtala bo‘lim ham haqiqiy imtixon muhitiga yaqin simulyatsiya qilinadi. Barcha javoblar ekspertlar tomonidan tekshiriladi.
+                <div class="faq-inner p-5 sm:p-6 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed border-t border-primary/10">
+                  Natijalar 48 soat ichida yuboriladi. Writing va Speaking uchun alohida feedback ham beriladi.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item rounded-xl border border-primary/10 bg-background-light dark:bg-background-dark overflow-hidden shadow-sm" role="listitem">
+              <button type="button" class="faq-trigger faq-trigger-btn w-full flex items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5 text-left font-bold text-slate-900 dark:text-white hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">
+                <span class="text-left pr-2">Speaking qanday o‘tkaziladi?</span>
+                <span class="faq-icon material-symbols-outlined shrink-0 text-primary transition-transform duration-300 ease-out" aria-hidden="true">expand_more</span>
+              </button>
+              <div id="faq-answer-5" class="faq-content" role="region" aria-labelledby="faq-question-5" aria-hidden="true">
+                <div class="faq-inner p-5 sm:p-6 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed border-t border-primary/10">
+                  Speaking qismi real IELTS imtihonidagi kabi face-to-face intervyu shaklida o‘tkaziladi.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item rounded-xl border border-primary/10 bg-background-light dark:bg-background-dark overflow-hidden shadow-sm" role="listitem">
+              <button type="button" class="faq-trigger faq-trigger-btn w-full flex items-center justify-between gap-4 px-5 py-4 sm:px-6 sm:py-5 text-left font-bold text-slate-900 dark:text-white hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">
+                <span class="text-left pr-2">Bu to‘liq Mock testmi?</span>
+                <span class="faq-icon material-symbols-outlined shrink-0 text-primary transition-transform duration-300 ease-out" aria-hidden="true">expand_more</span>
+              </button>
+              <div id="faq-answer-6" class="faq-content" role="region" aria-labelledby="faq-question-6" aria-hidden="true">
+                <div class="faq-inner p-5 sm:p-6 text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed border-t border-primary/10">
+                  Ha. Test quyidagilarni o‘z ichiga oladi: Listening, Reading, Writing, Speaking.
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Final CTA -->
+      <section class="py-16 sm:py-24 lg:py-28 bg-primary text-white" id="final-cta">
+        <div class="mx-auto max-w-2xl px-4 sm:px-6 text-center">
+          <h2 class="text-2xl font-black sm:text-3xl lg:text-4xl leading-tight">
+            Real IELTSdan oldin o‘z darajangizni bilib oling
+          </h2>
+          <p class="mt-6 text-white/90 text-sm sm:text-base leading-relaxed">
+            Real imtihon uchun katta pul sarflashdan oldin Mock Test topshirib darajangizni tekshirib ko‘ring. Shunda siz haqiqiy IELTSga ko‘proq ishonch bilan borasiz.
+          </p>
+          <a
+            href="go.html"
+            rel="noopener"
+            target="_blank"
+            class="btn-tap mt-10 inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-base font-black text-primary shadow-lg transition-all hover:bg-white/95 active:scale-[0.98]"
+          >
+            <span>Mock Testga yozilish</span>
+            <span class="material-symbols-outlined text-xl">arrow_forward</span>
+          </a>
+        </div>
+      </section>
     </main>
     <!-- Fixed CTA on small screens only -->
     <div
       class="fixed bottom-0 left-0 right-0 z-50 flex sm:hidden items-center justify-center gap-2 px-4 pt-4 pb-[max(1rem,env(safe-area-inset-bottom))] bg-background-light/95 dark:bg-background-dark/95 border-t border-slate-200 dark:border-slate-700 backdrop-blur supports-[backdrop-filter]:bg-background-light/90 supports-[backdrop-filter]:dark:bg-background-dark/90"
-      aria-label="Ro‘yxatdan o‘tish"
+      aria-label="Mock Testga yozilish"
     >
       <a
         href="go.html"
@@ -622,7 +579,7 @@
         target="_blank"
         class="btn-tap inline-flex min-h-[52px] w-full max-w-[280px] items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-black text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 hover:shadow-xl hover:shadow-primary/25 active:scale-[0.98]"
       >
-        <span>Ro‘yxatdan o‘tish</span>
+        <span>Mock Testga yozilish</span>
         <span class="material-symbols-outlined text-xl">arrow_forward</span>
       </a>
     </div>
@@ -666,9 +623,8 @@
           </div>
           
         </div>
-        <div class="mt-10 sm:mt-12 text-center text-xs text-slate-500 px-2">
+        <div class="mt-10 sm:mt-12 text-center text-xs text-slate-500 dark:text-slate-400 px-2">
           © 2024 ieltscore. Barcha huquqlar himoyalangan. IELTS uchun professional <span class="mock-test-emphasis">Mock Test</span> platformasi.
-          xizmatlari.
         </div>
       </div>
     </footer>

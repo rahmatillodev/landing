@@ -7,6 +7,39 @@
   color: #5b8ef4;
 }
 
+/* Section heads: consistent title + subtitle spacing and readability */
+.section-head {
+  text-align: center;
+}
+.section-head-sub {
+  max-width: 42rem;
+}
+
+/* Readable line length for body copy (approx 65–70 chars) */
+.hero-body p,
+.experience-content .max-w-xl,
+.testimonial-quote {
+  max-width: 40rem;
+}
+@media (min-width: 1024px) {
+  .experience-content .max-w-xl {
+    max-width: 36rem;
+  }
+}
+
+/* Price block: visual grouping and list spacing */
+.price-block {
+  padding: 0 0.5rem;
+}
+.price-list li {
+  padding: 0.125rem 0;
+}
+
+/* FAQ: trigger text wraps cleanly, answer has breathing room */
+.faq-inner {
+  padding-top: 0.75rem;
+}
+
 /* FAQ Accordion: animated opening and closing */
 .faq-content {
   max-height: 0;
@@ -221,12 +254,19 @@ p, span, li, label {
     gap: 0.75rem;
   }
 
-  /* How it works: less gap and step padding */
-  #how-it-works .gap-10 {
-    gap: 1.5rem;
+  /* Experience / What you get: comfortable spacing */
+  #experience .space-y-4 {
+    gap: 0.75rem;
   }
-  #how-it-works .pb-8 {
-    padding-bottom: 1.25rem;
+  #what-you-get .grid-cols-2 {
+    gap: 0.5rem;
+  }
+  #what-you-get .p-5 {
+    padding: 0.75rem;
+  }
+  /* Testimonial cards: comfortable on small screens */
+  #testimonials .testimonial-card blockquote {
+    font-size: 0.9375rem;
   }
 
   /* Footer */
