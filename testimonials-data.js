@@ -25,7 +25,7 @@ window.TESTIMONIALS_DATA = [
   },
   {
     name: "Munisa Zikriyoyeva",
-    quote: "Tping bo'yicha hali ishlashim kerak ekanligni bilib oldim kerak narsa ekan typing ham.",
+    quote: "Typing bo'yicha hali ishlashim kerak ekanligni bilib oldim kerak narsa ekan typing ham.",
     score: "6.5 ball",
     stars: 5
   },
