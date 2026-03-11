@@ -1,13 +1,13 @@
 window.TESTIMONIALS_DATA = [
   {
     name: "Ismoilova Bibixojar",
-    quote: "Mock test juda foydali bo‘ldi. Real imtihonga o‘xshash muhitda topshirdim va aniq feedback oldim.",
+    quote: "Mock test foydali bo‘ldi. Real imtihonga o‘xshash muhitda topshirdim",
     score: "7.5 ball",
     stars: 5
   },
   {
     name: "Mubina Abdumanonova",
-    quote: "Natijalar tez chiqdi va qaysi skill ustida ishlashim kerakligini tushundim.",
+    quote: "Qaysi skill ustida ishlashim kerakligini tushundim.",
     score: "7.0 ball",
     stars: 5
   },
@@ -25,7 +25,7 @@ window.TESTIMONIALS_DATA = [
   },
   {
     name: "Munisa Zikriyoyeva",
-    quote: "Typing bo'yicha hali ishlashim kerak ekanligni bilib oldim kerak narsa ekan typing ham.",
+    quote: "Typing bo'yicha hali ishlashim kerak ekanligni bilib oldim, kerakli narsa ekan typing ham.",
     score: "6.5 ball",
     stars: 5
   },
@@ -67,7 +67,7 @@ window.TESTIMONIALS_DATA = [
   },
   {
     name: "Muzdalifa Uzaqova",
-    quote: "Natija va tavsiyalar juda tushunarli berildi.",
+    quote: "Hali yana ishlab yana mock test topshirmoqchiman.",
     score: "6.5 ball",
     stars: 5
   },
@@ -79,13 +79,13 @@ window.TESTIMONIALS_DATA = [
   },
   {
     name: "Akramov Horun",
-    quote: "Mock test real imtihonga tayyorgarlik uchun yaxshi imkoniyat.",
+    quote: "Mock test real imtihonga tayyorgarlik uchun yaxshi imkoniyat ekan.",
     score: "5.5 ball",
     stars: 5
   },
   {
     name: "Sitora Alimova",
-    quote: "Natijalar va feedback tayyorgarlik jarayonimga katta yordam berdi.",
+    quote: "IELTS qimmatligi uchun test qilib ko'rdim o'zimni pulimga kuganidan shunga sarflaganimdan xursandman.",
     score: "5.5 ball",
     stars: 5
   }
