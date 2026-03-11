@@ -282,45 +282,50 @@
       }, 2500);
     })();
   
-    // ——— Reviews carousel ———
+    // ——— Testimonials Swiper carousel (data from testimonials-data.js) ———
     (function() {
-      log('[Carousel] init');
-      var reviewCarousel = document.getElementById('reviewsCarousel');
-      var reviewsPrev = document.getElementById('reviewsPrev');
-      var reviewsNext = document.getElementById('reviewsNext');
-      if (!reviewCarousel || !reviewsPrev || !reviewsNext) {
-        log('[Carousel] elements missing, skip');
+      var data = typeof window !== 'undefined' && window.TESTIMONIALS_DATA;
+      var wrapper = document.getElementById('testimonials-swiper-wrapper');
+      if (!Array.isArray(data) || !data.length || !wrapper) {
+        log('[Testimonials] no data or wrapper, skip');
         return;
       }
-  
-      function getScrollAmount() {
-        var card = reviewCarousel.querySelector('.review-card');
-        if (!card) return reviewCarousel.clientWidth;
-        var style = getComputedStyle(reviewCarousel);
-        var gap = parseInt(style.columnGap || style.gap || '0', 10) || 0;
-        return card.getBoundingClientRect().width + gap;
+      function starsHtml(n) {
+        var s = '';
+        for (var i = 0; i < (n || 5); i++) s += '<span class="material-symbols-outlined fill-current text-lg">star</span>';
+        return s;
       }
-      function updateButtons() {
-        var maxScroll = Math.max(reviewCarousel.scrollWidth - reviewCarousel.clientWidth, 0);
-        var left = reviewCarousel.scrollLeft;
-        reviewsPrev.disabled = left <= 1;
-        reviewsNext.disabled = left >= maxScroll - 1;
+      data.forEach(function(t) {
+        var slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+        slide.innerHTML =
+          '<div class="testimonial-card rounded-2xl border border-primary/10 bg-background-light dark:bg-background-dark p-6 sm:p-8 shadow-sm transition-all hover:shadow-md flex flex-col h-full">' +
+            '<blockquote class="testimonial-quote text-slate-600 dark:text-slate-400 text-sm sm:text-base italic flex-1 leading-relaxed">' + (t.quote || '') + '</blockquote>' +
+            '<div class="mt-6 pt-5 border-t border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-x-3 gap-y-1">' +
+              '<p class="text-sm font-bold text-slate-900 dark:text-white">' + (t.name || '') + '</p>' +
+              '<div class="flex gap-0.5 text-amber-400" aria-hidden="true">' + starsHtml(t.stars) + '</div>' +
+              '<p class="text-xs text-slate-500 dark:text-slate-400 w-full">' + (t.score || '') + '</p>' +
+            '</div>' +
+          '</div>';
+        wrapper.appendChild(slide);
+      });
+      var swiperEl = document.querySelector('.testimonials-swiper');
+      if (swiperEl && typeof window.Swiper !== 'undefined') {
+        new window.Swiper('.testimonials-swiper', {
+          slidesPerView: 1,
+          spaceBetween: 24,
+          loop: true,
+          autoplay: { delay: 4000, disableOnInteraction: false },
+          breakpoints: {
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
+          }
+        });
+        log('[Testimonials] Swiper ready');
+      } else {
+        log('[Testimonials] Swiper lib or element missing');
       }
-      reviewsPrev.addEventListener('click', function() {
-        log('[Carousel] prev clicked');
-        reviewCarousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
-      });
-      reviewsNext.addEventListener('click', function() {
-        log('[Carousel] next clicked');
-        reviewCarousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
-      });
-      reviewCarousel.addEventListener('scroll', function() { requestAnimationFrame(updateButtons); });
-      window.addEventListener('resize', function() {
-        log('[Carousel] resize');
-        updateButtons();
-      });
-      updateButtons();
-      log('[Carousel] ready');
     })();
 
     // ——— FAQ Accordion ———

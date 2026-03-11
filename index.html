@@ -59,6 +59,7 @@
       };
     </script>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body
     class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col"
@@ -199,6 +200,19 @@
                 src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80"
               />
             </div>
+          </div>
+
+          <!-- yozilish -->
+          <div class="mt-10 text-center">
+            <a
+              href="go.html"
+              rel="noopener"
+              target="_blank"
+              class="btn-tap inline-flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-black text-white shadow-lg shadow-primary/30 transition-all hover:bg-primary/90 hover:shadow-xl active:scale-[0.98]"
+            >
+              <span>Mock Testga yozilish</span>
+              <span class="material-symbols-outlined text-xl">arrow_forward</span>
+            </a>
           </div>
         </div>
       </section>
@@ -392,7 +406,7 @@
           </div>
         </div>
       </section> -->
-      <!-- Testimonials -->
+      <!-- Testimonials (Swiper carousel, data in testimonials-data.js) -->
       <section class="py-16 sm:py-24 lg:py-28 bg-primary/5" id="testimonials">
         <div class="mx-auto max-w-7xl px-4 sm:px-6">
           <header class="section-head mb-12 sm:mb-16">
@@ -403,63 +417,9 @@
               Real IELTSdan oldin sinab ko‘rganlarimizning fikrlari.
             </p>
           </header>
-          <div class="grid gap-6 sm:gap-8 md:grid-cols-3">
-            <div class="testimonial-card rounded-2xl border border-primary/10 bg-background-light dark:bg-background-dark p-6 sm:p-8 shadow-sm transition-all hover:shadow-md flex flex-col">
-              <div class="flex gap-0.5 text-amber-400 mb-5" aria-hidden="true">
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-              </div>
-              <blockquote class="testimonial-quote text-slate-600 dark:text-slate-400 text-sm sm:text-base italic flex-1 leading-relaxed">
-                «Mock test haqiqiy imtihonga juda o‘xshash edi — platforma, vaqt, hammasi. 48 soat ichida Writing va Speaking bo‘yicha aniq feedback oldim. Real IELTSdan oldin topshirishga qaror qildim.»
-              </blockquote>
-              <div class="mt-6 flex items-center gap-3 pt-5 border-t border-slate-200 dark:border-slate-700">
-                <img class="h-11 w-11 shrink-0 rounded-full object-cover ring-2 ring-primary/20" alt="" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" width="44" height="44" />
-                <div class="min-w-0">
-                  <p class="text-sm font-bold text-slate-900 dark:text-white">Sarvar M.</p>
-                  <p class="text-xs text-slate-500 dark:text-slate-400">8.0 ball</p>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-card rounded-2xl border border-primary/10 bg-background-light dark:bg-background-dark p-6 sm:p-8 shadow-sm transition-all hover:shadow-md flex flex-col">
-              <div class="flex gap-0.5 text-amber-400 mb-5" aria-hidden="true">
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-              </div>
-              <blockquote class="testimonial-quote text-slate-600 dark:text-slate-400 text-sm sm:text-base italic flex-1 leading-relaxed">
-                «Writing bo‘limi bo‘yicha ekspert fikri hammasi o‘zgartirdi. Nima uchun 6.5 da qotib qolganimni nihoyat tushundim. Real imtihonga ancha ishonch bilan bordim.»
-              </blockquote>
-              <div class="mt-6 flex items-center gap-3 pt-5 border-t border-slate-200 dark:border-slate-700">
-                <img class="h-11 w-11 shrink-0 rounded-full object-cover ring-2 ring-primary/20" alt="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" width="44" height="44" />
-                <div class="min-w-0">
-                  <p class="text-sm font-bold text-slate-900 dark:text-white">Dilnoza K.</p>
-                  <p class="text-xs text-slate-500 dark:text-slate-400">7.5 ball</p>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-card rounded-2xl border border-primary/10 bg-background-light dark:bg-background-dark p-6 sm:p-8 shadow-sm transition-all hover:shadow-md flex flex-col">
-              <div class="flex gap-0.5 text-amber-400 mb-5" aria-hidden="true">
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-                <span class="material-symbols-outlined fill-current text-lg">star</span>
-              </div>
-              <blockquote class="testimonial-quote text-slate-600 dark:text-slate-400 text-sm sm:text-base italic flex-1 leading-relaxed">
-                «Speaking face-to-face o‘tdi, xuddi real imtihondagi kabi. 48 soat ichida natija keldi, qaysi skill ustida ishlash kerakligi ham yozilgan edi. Juda foydali.»
-              </blockquote>
-              <div class="mt-6 flex items-center gap-3 pt-5 border-t border-slate-200 dark:border-slate-700">
-                <img class="h-11 w-11 shrink-0 rounded-full object-cover ring-2 ring-primary/20" alt="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" width="44" height="44" />
-                <div class="min-w-0">
-                  <p class="text-sm font-bold text-slate-900 dark:text-white">Ahmadjon R.</p>
-                  <p class="text-xs text-slate-500 dark:text-slate-400">7.0 ball</p>
-                </div>
-              </div>
+          <div class="testimonials-swiper-wrap">
+            <div class="swiper testimonials-swiper">
+              <div class="swiper-wrapper" id="testimonials-swiper-wrapper"></div>
             </div>
           </div>
         </div>
@@ -569,7 +529,7 @@
       </section>
     </main>
     <!-- Fixed CTA on small screens only -->
-    <div
+    <!-- <div
       class="fixed bottom-0 left-0 right-0 z-50 flex sm:hidden items-center justify-center gap-2 px-4 pt-4 pb-[max(1rem,env(safe-area-inset-bottom))] bg-background-light/95 dark:bg-background-dark/95 border-t border-slate-200 dark:border-slate-700 backdrop-blur supports-[backdrop-filter]:bg-background-light/90 supports-[backdrop-filter]:dark:bg-background-dark/90"
       aria-label="Mock Testga yozilish"
     >
@@ -582,7 +542,7 @@
         <span>Mock Testga yozilish</span>
         <span class="material-symbols-outlined text-xl">arrow_forward</span>
       </a>
-    </div>
+    </div> -->
     <!-- Footer -->
     <footer
       class="border-t border-slate-200 bg-background-light py-10 mb-20 sm:mb-0 dark:border-slate-800 dark:bg-background-dark sm:py-12"
@@ -660,6 +620,8 @@
 
       </script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="testimonials-data.js"></script>
     <script src="script.js"></script>
 
   </body>
